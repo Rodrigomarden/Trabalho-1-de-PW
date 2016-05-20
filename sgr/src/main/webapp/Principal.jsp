@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
-    <title>Fancy navbar login / sign in form - Bootsnipp.com</title>
+    <title>SGR-Sistema Gerenciador de Restaurante</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="Css/estilo.css" rel="stylesheet">
@@ -42,9 +42,10 @@
 
 
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="Css/estiloPrincipal.css" rel="stylesheet">
 
 <div class="nav-side-menu">
-    <div class="brand">Brand Logo</div>
+    <div class="brand">Menu</div>
     <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
   
         <div class="menu-list">
@@ -52,32 +53,32 @@
             <ul id="menu-content" class="menu-content collapse out">
                 <li>
                   <a href="#">
-                  <i class="fa fa-dashboard fa-lg"></i> Dashboard
+                  <i class="fa fa-dashboard fa-lg"></i> Mesas
                   </a>
                 </li>
 
-                <li  data-toggle="collapse" data-target="#products" class="collapsed active">
-                  <a href="#"><i class="fa fa-gift fa-lg"></i> UI Elements <span class="arrow"></span></a>
+                <li  data-toggle="collapse" data-target="#pedidos">
+                  <a href="#"><i class="fa fa-gift fa-lg"></i> Pedidos <span class="arrow"></span></a>
                 </li>
-                <ul class="sub-menu collapse" id="products">
-                    <li class="active"><a href="#">CSS3 Animation</a></li>
-                    <li><a href="#">General</a></li>
-                    <li><a href="#">Buttons</a></li>
-                    <li><a href="#">Tabs & Accordions</a></li>
-                    <li><a href="#">Typography</a></li>
-                    <li><a href="#">FontAwesome</a></li>
-                    <li><a href="#">Slider</a></li>
-                    <li><a href="#">Panels</a></li>
-                    <li><a href="#">Widgets</a></li>
-                    <li><a href="#">Bootstrap Model</a></li>
+                <ul class="sub-menu collapse" id="pedidos">
+                    <li><a href="#">Pedidos em Andamento</a></li>
+                    <li><a href="#">Pedidos Finalizados</a></li>
+                    <li data-toggle="collapse" data-target="#pedidosF">
+                    	<a href="#">Pedidos para Entregar<span class="arrow"></a>
+                    	<ul class="sub-menu collapse" id="pedidosF">
+                    		<li class="pedidosEntrega"><a href="#">Aaa</a></li>
+                    	</ul>	
+                    		
+                    </li>
+                    	
                 </ul>
 
-
-                <li data-toggle="collapse" data-target="#service" class="collapsed">
-                  <a href="#"><i class="fa fa-globe fa-lg"></i> Services <span class="arrow"></span></a>
+				
+                <li data-toggle="collapse" data-target="#entregas" class="collapsed">
+                  <a href="#"><i class="fa fa-globe fa-lg"></i> Entregas <span class="arrow"></span></a>
                 </li>  
-                <ul class="sub-menu collapse" id="service">
-                  <li>New Service 1</li>
+                <ul class="sub-menu collapse" id="entregas">
+                  <li>Pedidos</li>
                   <li>New Service 2</li>
                   <li>New Service 3</li>
                 </ul>

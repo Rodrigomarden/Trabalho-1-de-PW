@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
-    <title>Fancy navbar login / sign in form - Bootsnipp.com</title>
+    <title>SGR-Sistema Gerenciador de Restaurante</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="Css/estilo.css" rel="stylesheet">
+    <link href="Css/estiloIndex.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
@@ -112,8 +112,6 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
-/*http://bootsnipp.com/snippets/featured/responsive-navigation-menu*/
 
 
 </body>
