@@ -66,7 +66,7 @@
                     <li data-toggle="collapse" data-target="#pedidosF">
                     	<a href="#">Pedidos para Entregar<span class="arrow"></a>
                     	<ul class="sub-menu collapse" id="pedidosF">
-                    		<li class="pedidosEntrega"><a href="#">Aaa</a></li>
+                    		<li class="pedidosEntrega"><a href="#">Aaabb</a></li>
                     	</ul>	
                     		
                     </li>
