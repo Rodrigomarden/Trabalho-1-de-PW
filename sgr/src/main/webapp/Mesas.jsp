@@ -5,7 +5,7 @@
     <title>Di Gestão</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="Css/estiloIndex.css" rel="stylesheet">
+
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
@@ -41,7 +41,7 @@
 
 
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-<link href="Css/estiloPrincipal.css" rel="stylesheet">
+<link href="Css/estiloMesas.css" rel="stylesheet">
 
 <div class="nav-side-menu">
     <div class="brand">Menu</div>
@@ -107,7 +107,21 @@
             </ul>
      </div>
 </div>
-<div class="janela">Mesas</div>
+<div class="janela">
+	<p>
+		<table class="tabela" width="70%" bgcolor="#1E679A"> 
+			<tr> 
+			   <td bgcolor="#BDBDBD"> 
+					<h5><b>&nbsp&nbsp&nbspMesas</b></h5> 
+				</td> 
+			</tr> 
+		</table>
+	</p>
+	<br>
+	<p>
+		aaaa
+	</p> 
+</div>
 </body>
 <script type="text/javascript">
 
