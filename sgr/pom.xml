@@ -5,7 +5,7 @@
   <artifactId>sgr</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>sgr Maven Webapp</name>
+  <name>Di-Gestão Maven Webapp</name>
   <url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
@@ -28,7 +28,7 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>imcMVC</finalName>
+		<finalName>DiGestão</finalName>
 		<!-- Para usar o projeto com o Tomcat -->
 		<plugins>
 			<plugin>
