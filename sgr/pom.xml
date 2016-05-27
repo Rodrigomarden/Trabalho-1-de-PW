@@ -8,8 +8,8 @@
   <name>Di-Gestão Maven Webapp</name>
   <url>http://maven.apache.org</url>
 	<properties>
-		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
@@ -28,6 +28,7 @@
 		</dependency>
 	</dependencies>
 	<build>
+		
 		<finalName>DiGestão</finalName>
 		<!-- Para usar o projeto com o Tomcat -->
 		<plugins>
@@ -37,6 +38,7 @@
 				<version>2.2</version>
 				<configuration>
 					<port>9090</port>
+					<sourceEncoding>UTF-8</sourceEncoding>
 				</configuration>
 			</plugin>
 			<plugin>
