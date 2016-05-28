@@ -120,11 +120,12 @@
 			 	<td bgcolor="#FFFFFF">
 		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 		 		</td>
-		 		<td bgcolor="#F2F2F2">
-		 				&nbsp&nbsp&nbspAtendente: Rodrigo&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		 				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		 				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		 				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		<td bgcolor="#F2F2F2" WIDTH=510>
+		 				&nbsp&nbsp&nbspAtendente: &nbsp&nbsp<select>
+                                                    <option value="rodrigo">Rodrigo Marden</option>
+                                                    <option value="tony">Tony Willian</option> 
+                                                    <option value="matheus">Matheus Assis</option> 
+                                                </select>
 		 		</td>
 			 </tr>
 			 <tr bgcolor="#F2F2F2">
@@ -136,6 +137,12 @@
 			 		<input type="image" src="Mesas/garc.png">
 			 		Atendente:
 		 		</td>
+		 		<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td>
+		 		<td>
+		 			&nbsp&nbsp&nbspObservação <input name="observacao" size=50px>
+		 		</td>
 		 	</tr>
 		 	<tr bgcolor="#F2F2F2">
 		 		<td style="font-size: 13px">
@@ -143,7 +150,346 @@
 		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspR$20,00
 		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRodrigo Marden
 		 		</td>
+		 		<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td>
+		 		<td>
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 			Cliente <input name="observacao" size=50px>
+		 		</td>
 		 	</tr>
+		</table>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<table>
+			<tr bgcolor="#E6E6E6">
+				<td>
+					<a href="#"><input type="image" src="Mesas/locPedido.png"></a>
+				</td>
+				<td WIDTH=800>
+					<a href="#">Localizar um Produto</a>
+				</td>
+			</tr>
+		</table>
+		<table BORDER RULES=cols>
+			<tr bgcolor="#F2F2F2">
+				<td WIDTH=70>
+					Qnt.
+				</td>
+				<td WIDTH=350>
+					Produto
+				</td>
+				<td WIDTH=100>
+					Preço Unit.
+				</td>
+				<td WIDTH=80>
+					Subtotal
+				</td>
+				<td WIDTH=190>
+					Atendente
+				</td>
+				<td WIDTH=52>
+					Código
+				</td>
+			</tr>
+			<tr>
+				<td ALIGN=MIDDLE>
+					2
+				</td>
+				<td>
+					Coca-cola lata 350ml
+				</td>
+				<td ALIGN=MIDDLE>
+					3,50
+				</td>
+				<td ALIGN=MIDDLE>
+					7,00
+				</td>
+				<td>
+					Rodrigo
+				</td>
+				<td ALIGN=MIDDLE>
+					1
+				</td>
+			</tr>
+			<tr>
+				<td ALIGN=MIDDLE>
+					1
+				</td>
+				<td>
+					Fritas com Cheddar
+				</td>
+				<td ALIGN=MIDDLE>
+					13,00
+				</td>
+				<td ALIGN=MIDDLE>
+					13,00
+				</td>
+				<td>
+					Rodrigo
+				</td>
+				<td ALIGN=MIDDLE>
+					2
+				</td>
+			</tr>
+			<tr>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+			</tr>
+			<tr>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+			</tr>
+			<tr>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+			</tr>
+			<tr>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+			</tr>
+			<tr>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+			</tr>
+			<tr>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+			</tr>
+			<tr>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+			</tr>
+			<tr>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+			</tr>
+			<tr>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+			</tr>
+			<tr>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+			</tr>
+			<tr>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE bgcolor="#F2F2F2">
+					Total
+				</td>
+				<td ALIGN=MIDDLE bgcolor="#F2F2F2">
+					20,00
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+			</tr>
+		</table>
+		<table>
+			<tr bgcolor="#E6E6E6">
+				<td WIDTH=540>
+					&nbsp&nbsp&nbsp+Entrega: 0,00
+				</td>
+				<td WIDTH=200>
+					+Serviço: 2,00
+				</td>
+				<td>
+					=A Pagar: 22,00
+				</td>
+			</tr>
+		</table>
+		<table>
+			<tr bgcolor="#F2F2F2">
+				<td>
+					<input type="image" src="Mesas/icExcluir.png">
+				</td>
+				<td WIDTH=493>
+					<b>Excluir Pedido</b>
+				</td>
+				<td>
+					<input type="image" src="Mesas/calculadora.png">
+				</td>
+				<td WIDTH=200>
+					<b>Pagamento</b>
+				</td>
+				<td>
+					<input type="image" src="Mesas/icVoltar.png">
+				</td>
+				<td>
+					<b>Voltar</b>
+				</td>
+			</tr>
 		</table>
 	</p>
 	<br>
