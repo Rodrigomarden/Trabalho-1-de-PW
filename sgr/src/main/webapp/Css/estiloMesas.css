@@ -12,6 +12,12 @@
 	position: fixed;
 }
 
+.mesaJanela {
+	position: fixed;
+	left: 390px;
+	top: 42px;
+}
+
 .janela {
 	position: fixed;
 	left: 350px;

@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Di Gestão</title>
+    <title>DI Gestão</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="Css/estiloIndex.css" rel="stylesheet">
+
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
@@ -41,7 +41,7 @@
 
 
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-<link href="Css/estiloPrincipal.css" rel="stylesheet">
+<link href="Css/estiloMesas.css" rel="stylesheet">
 
 <div class="nav-side-menu">
     <div class="brand">Menu</div>
@@ -52,7 +52,7 @@
             <ul id="menu-content" class="menu-content collapse out">
                 <li>
                   <a href="Mesas.jsp">
-                  <i> <input type="image" src=""></i> Mesas
+                  <i class="fa fa-dashboard fa-lg"></i> Mesas
                   </a>
                 </li>
 
@@ -60,13 +60,12 @@
                   <a href="#"><i class="fa fa-gift fa-lg"></i> Pedidos <span class="arrow"></span></a>
                 </li>
                 <ul class="sub-menu collapse" id="pedidos">
-                	<li><a href="#">Novo Pedido</a></li>
                     <li><a href="#">Pedidos em Andamento</a></li>
                     <li><a href="#">Pedidos Finalizados</a></li>
                     <li data-toggle="collapse" data-target="#pedidosF">
                     	<a href="#">Pedidos para Entregar<span class="arrow"></a>
                     	<ul class="sub-menu collapse" id="pedidosF">
-                    		<li class="pedidosEntrega"><a href="#">XXXX</a></li>
+                    		<li class="pedidosEntrega"><a href="#">Aaabb</a></li>
                     	</ul>	
                     		
                     </li>
@@ -108,9 +107,51 @@
             </ul>
      </div>
 </div>
-
+<div class="mesaJanela">
+	<p>
+		 <table class="tabela">
+		 	<tr bgcolor="#D8D8D8" style="font-size: 15px">
+		 		<!--Mesa 1-->
+		 		<td>
+				 	&nbsp&nbsp&nbspMesa&nbsp<b>001</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			 	</td>
+			 	<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td>
+		 		<td bgcolor="#F2F2F2">
+		 				&nbsp&nbsp&nbspAtendente: Rodrigo&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td>
+			 </tr>
+			 <tr bgcolor="#F2F2F2">
+		 		<td style="font-size: 13px">
+			 		<input type="image" src="Mesas/relogio.png">
+			 		Tempo: &nbsp&nbsp
+			 		<input type="image" src="Mesas/calculadora.png">
+			 		Sub total: &nbsp&nbsp
+			 		<input type="image" src="Mesas/garc.png">
+			 		Atendente:
+		 		</td>
+		 	</tr>
+		 	<tr bgcolor="#F2F2F2">
+		 		<td style="font-size: 13px">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp15:00m
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspR$20,00
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRodrigo Marden
+		 		</td>
+		 	</tr>
+		</table>
+	</p>
+	<br>
+</div>
 </body>
 <script type="text/javascript">
+
 </script>
 </body>
 </html>
+    
