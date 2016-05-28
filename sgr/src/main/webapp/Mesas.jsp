@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Di Gestão</title>
+    <title>DI Gestão</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 
@@ -23,7 +23,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="Login.jsp">Di Gestão</a>
+      <a class="navbar-brand" href="Login.jsp">DI - Gestão</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -109,18 +109,322 @@
 </div>
 <div class="janela">
 	<p>
-		<table class="tabela" width="70%" bgcolor="#1E679A"> 
+		<table class="tabela" width="100%"> 
 			<tr> 
 			   <td bgcolor="#BDBDBD"> 
 					<h5><b>&nbsp&nbsp&nbspMesas</b></h5> 
 				</td> 
 			</tr> 
 		</table>
+			<br>
+			<br>
+		<table>
+		  <tr>
+		    <td>
+		    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp		    
+		      <a href="#"><input type="image" src="Mesas/nvPedido.png"></a>
+		    </td>
+		    <td>
+		    	<a href="#">Novo Pedido</a>
+		    </td>
+		  </tr>
+		 </table>
+		 <br>
+		 <!--Primeira Linha de Mesas-->
+		 <table>
+		 	<tr bgcolor="#D8D8D8" style="font-size: 15px">
+		 		<!--Mesa 1-->
+		 		<td>
+		 			<a href="#">
+				 		&nbsp&nbsp&nbspMesa&nbsp<b>001</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			 		</a>
+			 	</td>
+		 		<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td>
+		 		<!--Mesa 2-->
+		 		<td>
+		 			<a href="#">
+				 		&nbsp&nbsp&nbspMesa&nbsp<b>002</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			 		</a>
+			 	</td>
+		 		<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td>
+		 		<td>
+		 		<!--Mesa 3-->
+			 		<a href="#">
+				 		&nbsp&nbsp&nbspMesa&nbsp<b>003</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			 		</a>
+		 		</td>
+		 	</tr>
+		 	<tr bgcolor="#F2F2F2">
+		 		<td style="font-size: 13px">
+		 		<input type="image" src="Mesas/relogio.png">
+		 		Tempo: &nbsp&nbsp
+		 		<input type="image" src="Mesas/calculadora.png">
+		 		Sub total: &nbsp&nbsp
+		 		<input type="image" src="Mesas/garc.png">
+		 		Atendente:
+		 		</td>
+		 		<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td><td style="font-size: 13px">
+		 		<input type="image" src="Mesas/relogio.png">
+		 		Tempo: &nbsp&nbsp
+		 		<input type="image" src="Mesas/calculadora.png">
+		 		Sub total: &nbsp&nbsp
+		 		<input type="image" src="Mesas/garc.png">
+		 		Atendente:
+		 		</td>
+		 		<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td>
+		 		<td style="font-size: 13px">
+		 		<input type="image" src="Mesas/relogio.png">
+		 		Tempo: &nbsp&nbsp
+		 		<input type="image" src="Mesas/calculadora.png">
+		 		Sub total: &nbsp&nbsp
+		 		<input type="image" src="Mesas/garc.png">
+		 		Atendente:
+		 		</td>
+		 		<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td>
+		 	</tr>
+		 	<tr bgcolor="#F2F2F2">
+		 		<td style="font-size: 13px">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp00:02m
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspR$5,00
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Tony Willian
+		 		</td>
+		 		<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td>
+		 		<td style="font-size: 13px">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp00:00m
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspR$0,00
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNão Informado
+		 		</td>
+		 		<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td>
+		 		<td style="font-size: 13px">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp15:00m
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspR$20,00
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRodrigo Marden
+		 		</td>
+		 		<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td>
+		 	</tr>
+		 </table>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <!--Segunda Linha de Mesas-->
+		 <table>
+		 	<tr bgcolor="#D8D8D8" style="font-size: 15px">
+		 	<!--Mesa 4-->
+		 		<td>
+		 			<a href="#">
+				 		&nbsp&nbsp&nbspMesa&nbsp<b>004</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			 		</a>
+			 	</td>
+		 		<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td>
+		 		<!--Mesa 5-->
+		 		<td>
+		 			<a href="#">
+				 		&nbsp&nbsp&nbspMesa&nbsp<b>005</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			 		</a>
+			 	</td>
+		 		<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td>
+		 		<!--Mesa 6-->
+		 		<td>
+			 		<a href="#">
+				 		&nbsp&nbsp&nbspMesa&nbsp<b>006</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			 		</a>
+		 		</td>
+		 	</tr>
+		 	<tr bgcolor="#F2F2F2">
+		 		<td style="font-size: 13px">
+		 		<input type="image" src="Mesas/relogio.png">
+		 		Tempo: &nbsp&nbsp
+		 		<input type="image" src="Mesas/calculadora.png">
+		 		Sub total: &nbsp&nbsp
+		 		<input type="image" src="Mesas/garc.png">
+		 		Atendente:
+		 		</td>
+		 		<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td><td style="font-size: 13px">
+		 		<input type="image" src="Mesas/relogio.png">
+		 		Tempo: &nbsp&nbsp
+		 		<input type="image" src="Mesas/calculadora.png">
+		 		Sub total: &nbsp&nbsp
+		 		<input type="image" src="Mesas/garc.png">
+		 		Atendente:
+		 		</td>
+		 		<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td>
+		 		<td style="font-size: 13px">
+		 		<input type="image" src="Mesas/relogio.png">
+		 		Tempo: &nbsp&nbsp
+		 		<input type="image" src="Mesas/calculadora.png">
+		 		Sub total: &nbsp&nbsp
+		 		<input type="image" src="Mesas/garc.png">
+		 		Atendente:
+		 		</td>
+		 		<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td>
+		 	</tr>
+		 	<tr bgcolor="#F2F2F2">
+		 		<td style="font-size: 13px">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp25:02m
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspR$35,00
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Matheus Assis
+		 		</td>
+		 		<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td>
+		 		<td style="font-size: 13px">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp00:00m
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspR$0,00
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNão Informado
+		 		</td>
+		 		<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td>
+		 		<td style="font-size: 13px">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp00:00m
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspR$0,00
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNão Informado
+		 		</td>
+		 		<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td>
+		 	</tr>
+		 </table>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <!--Terceira Linha de Mesas-->
+		 <table>
+		 	<tr bgcolor="#D8D8D8" style="font-size: 15px">
+		 	<!--Mesa 7-->
+		 		<td>
+		 			<a href="#">
+				 		&nbsp&nbsp&nbspMesa&nbsp<b>007</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			 		</a>
+			 	</td>
+		 		<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td>
+		 		<!--Mesa 8-->
+		 		<td>
+		 			<a href="#">
+				 		&nbsp&nbsp&nbspMesa&nbsp<b>008</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			 		</a>
+			 	</td>
+		 		<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td>
+		 		<!--Mesa 9-->
+		 		<td>
+			 		<a href="#">
+				 		&nbsp&nbsp&nbspMesa&nbsp<b>009</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			 		</a>
+		 		</td>
+		 	</tr>
+		 	<tr bgcolor="#F2F2F2">
+		 		<td style="font-size: 13px">
+		 		<input type="image" src="Mesas/relogio.png">
+		 		Tempo: &nbsp&nbsp
+		 		<input type="image" src="Mesas/calculadora.png">
+		 		Sub total: &nbsp&nbsp
+		 		<input type="image" src="Mesas/garc.png">
+		 		Atendente:
+		 		</td>
+		 		<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td><td style="font-size: 13px">
+		 		<input type="image" src="Mesas/relogio.png">
+		 		Tempo: &nbsp&nbsp
+		 		<input type="image" src="Mesas/calculadora.png">
+		 		Sub total: &nbsp&nbsp
+		 		<input type="image" src="Mesas/garc.png">
+		 		Atendente:
+		 		</td>
+		 		<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td>
+		 		<td style="font-size: 13px">
+		 		<input type="image" src="Mesas/relogio.png">
+		 		Tempo: &nbsp&nbsp
+		 		<input type="image" src="Mesas/calculadora.png">
+		 		Sub total: &nbsp&nbsp
+		 		<input type="image" src="Mesas/garc.png">
+		 		Atendente:
+		 		</td>
+		 		<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td>
+		 	</tr>
+		 	<tr bgcolor="#F2F2F2">
+		 		<td style="font-size: 13px">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp00:00m
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspR$0,00
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNão Informado
+		 		</td>
+		 		<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td>
+		 		<td style="font-size: 13px">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp00:00m
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspR$0,00
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNão Informado
+		 		</td>
+		 		<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td>
+		 		<td style="font-size: 13px">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp00:00m
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspR$0,00
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNão Informado
+		 		</td>
+		 		<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td>
+		 	</tr>
+		 </table>
 	</p>
 	<br>
-	<p>
-		aaaa
-	</p> 
 </div>
 </body>
 <script type="text/javascript">

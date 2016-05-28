@@ -23,7 +23,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.jsp">Di Gestão</a>
+      <a class="navbar-brand" href="Login.jsp">DI - Gestão</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -110,8 +110,6 @@
 
 </body>
 <script type="text/javascript">
-
 </script>
 </body>
 </html>
-    

@@ -10,7 +10,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Di Gestão</title>
+  <title>DI Gestão</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="Login/css/bootstrap.min.css" rel="stylesheet">
@@ -91,7 +91,7 @@
                           <p id="ou">ou</p>
 
                           <!--Imput do Cadastro-->
-                          <form class="form" role="form" method="post" action="index.jsp" accept-charset="UTF-8" id="login-nav">
+                          <form class="form" role="form" method="post" action="Login.jsp" accept-charset="UTF-8" id="login-nav">
 
                             <!--Cadastrar Login-->
                             <div class="form-group">
@@ -212,7 +212,7 @@
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
               <h2>Sobre o Di - Gestão</h2>
-              <p>Com a agilidade que os recursos <strong>Di - Gestão</strong> oferecem, você e os membros de sua equipe poder de dedicar-se integralmente á satisfação do cliente, proporcionando uma experiência ainda mais rica desde a entrada no restaurante até o fechamento da conta. Conheça os benefícios do nosso sistema de restaurante.</p>
+              <p>Com a agilidade que os recursos <strong>Di - Gestão</strong> oferecem, você e os membros de sua equipe podem se dedicar integralmente à satisfação do cliente, proporcionando uma experiência ainda mais rica desde a entrada no restaurante até o fechamento da conta. Conheça os benefícios do nosso sistema de restaurante.</p>
               <p>Com o software para gestão de restaurante <strong>Di - Gestão</strong> você terá informações e poderá utilizar os dados para faturar mais com os negócios e economizar com as despesas extras. Ao estudar os números de seu restaurante, você tem uma boa perspectiva do seu volume de vendas e pode identificar as tendências de seus pedidos!.</p>
             </div>
           </div>
