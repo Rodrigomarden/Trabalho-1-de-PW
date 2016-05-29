@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Novo Pedido Delivery</title>
+        <title>DI Gestão</title>
         <link rel="stylesheet" href="Css/estiloPedidos.css"/>
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
@@ -214,7 +214,7 @@
             <button class="excluir"><img style="width:60px;" src="Mesas/icExcluir.png">&nbsp;Excluir Pedido&nbsp;&nbsp;&nbsp;</button>
             <button class="calc"><img style="width:50px;" src="Mesas/calc.png">&nbsp;Pagamento&nbsp;&nbsp;&nbsp;</button>
             <button class="print"><img style="width:50px;" src="Mesas/print.png">&nbsp;Imprimir&nbsp;&nbsp;</button>
-            <button class="sair"> <img style="width:60px;" src="Mesas/icVoltar.png">&nbsp;Sair</button>
+            <button class="sair"><a href="Principal.jsp"> <img style="width:60px;" src="Mesas/icVoltar.png">&nbsp;Sair </a></button>
         </div>
         </div>
     </body>

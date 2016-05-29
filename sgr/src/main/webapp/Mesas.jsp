@@ -65,7 +65,7 @@
                     <li data-toggle="collapse" data-target="#pedidosF">
                     	<a href="#">Pedidos para Entregar<span class="arrow"></a>
                     	<ul class="sub-menu collapse" id="pedidosF">
-                    		<li class="pedidosEntrega"><a href="#">Aaabb</a></li>
+                    		<li class="pedidosEntrega"><a href="NovoPedidoDelivery.jsp">Novo Pedido</a></li>
                     	</ul>	
                     		
                     </li>
@@ -112,7 +112,7 @@
 		<table class="tabela" width="100%"> 
 			<tr> 
 			   <td bgcolor="#BDBDBD"> 
-					<h5><b>&nbsp&nbsp&nbspMesas</b></h5> 
+					<h5><b>&nbsp&nbsp&nbsp<strong>Mesas</strong></b></h5> 
 				</td> 
 			</tr> 
 		</table>
