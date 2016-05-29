@@ -60,13 +60,13 @@
                   <a href="#"><i class="fa fa-gift fa-lg"></i> Pedidos <span class="arrow"></span></a>
                 </li>
                 <ul class="sub-menu collapse" id="pedidos">
-                	<li><a href="#">Novo Pedido</a></li>
+                    <li><a href="#">Novo Pedido</a></li>
                     <li><a href="#">Pedidos em Andamento</a></li>
                     <li><a href="#">Pedidos Finalizados</a></li>
                     <li data-toggle="collapse" data-target="#pedidosF">
-                    	<a href="#">Pedidos para Entregar<span class="arrow"></a>
+                    	<a href="#">Pedidos Delivery<span class="arrow"></a>
                     	<ul class="sub-menu collapse" id="pedidosF">
-                    		<li class="pedidosEntrega"><a href="#">XXXX</a></li>
+                    		<li class="pedidosEntrega"><a href="http://localhost:8080/sgr/NovoPedidoDelivery.jsp">Novo Pedido</a></li>
                     	</ul>	
                     		
                     </li>
