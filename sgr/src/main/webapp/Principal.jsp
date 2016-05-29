@@ -52,7 +52,7 @@
             <ul id="menu-content" class="menu-content collapse out">
                 <li>
                   <a href="Mesas.jsp">
-                  <i> <input type="image" src=""></i> Mesas
+                  <i class="fa fa-gift fa-lg"></i> Mesas
                   </a>
                 </li>
 
