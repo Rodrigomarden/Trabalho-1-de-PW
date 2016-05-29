@@ -52,7 +52,7 @@
             <ul id="menu-content" class="menu-content collapse out">
                 <li>
                   <a href="Mesas.jsp">
-                  <i class="fa fa-gift fa-lg"></i> Mesas
+                  <i> <input type="image" src=""></i> Mesas
                   </a>
                 </li>
 
@@ -64,9 +64,9 @@
                     <li><a href="#">Pedidos em Andamento</a></li>
                     <li><a href="#">Pedidos Finalizados</a></li>
                     <li data-toggle="collapse" data-target="#pedidosF">
-                    	Pedidos Delivery<span class="arrow">
+                    	<a href="#">Pedidos Delivery<span class="arrow"></a>
                     	<ul class="sub-menu collapse" id="pedidosF">
-                    		<li class="pedidosEntrega"><a href="NovoPedidoDelivery.jsp">Novo Pedido</a></li>
+                    		<li class="pedidosEntrega"><a href="http://localhost:8080/sgr/NovoPedidoDelivery.jsp">Novo Pedido</a></li>
                     	</ul>	
                     		
                     </li>

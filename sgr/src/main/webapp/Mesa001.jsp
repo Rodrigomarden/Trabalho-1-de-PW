@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <title>DI Gestão</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="Css/estiloPedidos.css"/>
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
 <body>
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -63,9 +63,9 @@
                     <li><a href="#">Pedidos em Andamento</a></li>
                     <li><a href="#">Pedidos Finalizados</a></li>
                     <li data-toggle="collapse" data-target="#pedidosF">
-                    	<a href="#">Pedidos para Entregar<span class="arrow"></a>
+                    	<a href="#">Pedidos Delivery<span class="arrow"></a>
                     	<ul class="sub-menu collapse" id="pedidosF">
-                    		<li class="pedidosEntrega"><a href="NovoPedidoDelivery.jsp">Novo Pedido</a></li>
+                    		<li class="pedidosEntrega"><a href="http://localhost:8080/sgr/NovoPedidoDelivery.jsp">Novo Pedido</a></li>
                     	</ul>	
                     		
                     </li>
@@ -108,125 +108,391 @@
      </div>
 </div>
 <div class="mesaJanela">
-	<div class="container-geral">
-	<div class="container-mesa">
-            <table class="pedido-mesa">
-                <tr class="linha-botoes">
-                    <caption style="background-color : #D8D8D8;height:40px;">
-                        <h5>Mesa &nbsp;<span style="font-size:20px;"><strong>001</strong></span></h5>
-                    </caption>
-                </tr> 
-                <tr>
-                    <td>
-                        <p><img src="Mesas/relogio.png"/>&nbsp;Tempo:</p>
-                    </td>
-                    <td>
-                        <p><img src="Mesas/calculadora.png"/>&nbsp;Subtotal:</p>                     
-                    </td>
-                    
-                    <td>
-                        <p><img src="Mesas/garc.png"/>&nbsp;Entregador:</p>                        
-                    </td>
-                </tr>
-                <tr class="informacoes-delibery">
-                    <td>00h15m</td>
-                    <td>R$ 20,00</td>
-                    <td>Rodrigo Marden</td>
-                </tr>
-                <tr>
-                    <td><br></td>
-                    <td><br></td>
-                    <td><br></td>
-                </tr>
-            </table>
-            <table class="atendente-mesa">
-                <caption style="width : 450px;">
-                        <p style="padding:5px 0px 0px 5px;">
-                            &nbsp&nbsp&nbspAtendente:
-                            <select style="width:300px;background-color : white;">
-                                <option value="rodrigo">Rodrigo Marden</option>
-                                <option value="matheus">Matheus Assis</option>
-                                <option value="tony">Tony William</option>
-                            </select>
-                        </p>
-                        <p style="padding:0px 0px 0px 5px;">
-                            Observação:
-                            <input style="width:300px;background-color : white;" name="observacao" size=50px>
-                        </p>
-                         <p style="padding:0px 0px 0px 5px;">
-                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCliente:
-                            <input style="width:300px;background-color : white;" name="observacao" size=50px>
-                        </p>
-                </caption>
-                
-            </table>
-            <section class="produtos-mesa">
-                <tr>
-                    <thead>
-                    <section class="button-busca">
-                        <img src="Mesas/locPedido.png"/>
-                        <br>
-                        <p> Localizar um Produto</p>
-                    </section>
-                    <section class="button-editar">
-                        <img src="Mesas/lapis.png"/>
-                        <br>
-                        <p>Editar</p>
-                    </section>
-                    </thead>
-                  <table class="tabela-produtos-mesa">
-                    <tr class="atributos-tabela-produtos" style="background-color:#F2F2F2;">
-                        <td style="border-right: 1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;width:50px;"><p>Qnt.</p></td>
-                        <td style="width : 400px;border-right: 1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;"><p>Produto</p></td>
-                        <td style="border-right: 1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;width:90px;"><p>Preço Unit.</p></td>
-                        <td style="border-right: 1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;width:80px;"><p>Subtotal</p></td>
-                        <td style="border-right: 1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;width:90px;"><p>Atendente</p></td>
-                        <td style="border-bottom:1px solid #E6E6E6;"><p>&nbsp;Código</p></td>
-                    </tr>
-                    <tr style="background-color : white;">
-                        <td>2<br>1<br><br><br><br><br><br><br><br><br><br></td>
-                        <td>Coca-cola lata 350ml<br>Fritas com Cheddar<br><br><br><br><br><br><br><br><br><br><br></td>
-                        <td>3,50<br>13,00<br><br><br><br><br><br><br><br><br><br><br></td>
-                        <td>7,00<br>13,00<br><br><br><br><br><br><br><br><br><br><br></td>
-                        <td>Rodrigo<br>Rodrigo<br><br><br><br><br><br><br><br><br><br><br></td>
-                        <td>1<br>2<br><br><br><br><br><br><br><br><br><br><br></td>
-                    </tr>
-                    <tr class="valor-total" style="background-color:#F2F2F2;">
-                        <td>
-                            <br>
-                                <input type="text" value="Total:"></input>
-                                <input id="input-vazio" type="text" value="20,00"></input>
-                        </td>
-                        <td></td><td></td><td></td><td></td><td></td><td></td>
-                    </tr>              
-                  </table>
-                    &nbsp;&nbsp;<span class="chek"><input type="checkbox">&nbsp;&nbsp;Quebra de linha na descrição do produto</span>
-                    <section class="apagar">
-                        <input type="text" value="+Entrega: 0,00"></input>
-                        <input type="text" value="+Serviço= 2,00"></input>
-                        <input type="text" value="=A Pagar: 22,00"></input>
-                    </section>
-            </section>
-        </div>
+	<p>
+		 <table class="tabela">
+		 	<tr bgcolor="#D8D8D8" style="font-size: 15px">
+		 		<!--Mesa 1-->
+		 		<td>
+				 	&nbsp&nbsp&nbspMesa&nbsp<b>001</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			 	</td>
+			 	<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td>
+		 		<td bgcolor="#F2F2F2" WIDTH=510>
+		 				&nbsp&nbsp&nbspAtendente: &nbsp&nbsp<select>
+                                                    <option value="rodrigo">Rodrigo Marden</option>
+                                                    <option value="tony">Tony Willian</option> 
+                                                    <option value="matheus">Matheus Assis</option> 
+                                                </select>
+		 		</td>
+			 </tr>
+			 <tr bgcolor="#F2F2F2">
+		 		<td style="font-size: 13px">
+			 		<input type="image" src="Mesas/relogio.png">
+			 		Tempo: &nbsp&nbsp
+			 		<input type="image" src="Mesas/calculadora.png">
+			 		Sub total: &nbsp&nbsp
+			 		<input type="image" src="Mesas/garc.png">
+			 		Atendente:
+		 		</td>
+		 		<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td>
+		 		<td>
+		 			&nbsp&nbsp&nbspObservação <input name="observacao" size=50px>
+		 		</td>
+		 	</tr>
+		 	<tr bgcolor="#F2F2F2">
+		 		<td style="font-size: 13px">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp15:00m
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspR$20,00
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRodrigo Marden
+		 		</td>
+		 		<td bgcolor="#FFFFFF">
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 		</td>
+		 		<td>
+		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 			Cliente <input name="observacao" size=50px>
+		 		</td>
+		 	</tr>
+		</table>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<table>
+			<tr bgcolor="#E6E6E6">
+				<td>
+					<a href="#"><input type="image" src="Mesas/locPedido.png"></a>
+				</td>
+				<td WIDTH=800>
+					<a href="#">Localizar um Produto</a>
+				</td>
+			</tr>
+		</table>
+		<table BORDER RULES=cols>
+			<tr bgcolor="#F2F2F2">
+				<td WIDTH=70>
+					Qnt.
+				</td>
+				<td WIDTH=350>
+					Produto
+				</td>
+				<td WIDTH=100>
+					Preço Unit.
+				</td>
+				<td WIDTH=80>
+					Subtotal
+				</td>
+				<td WIDTH=190>
+					Atendente
+				</td>
+				<td WIDTH=52>
+					Código
+				</td>
+			</tr>
+			<tr>
+				<td ALIGN=MIDDLE>
+					2
+				</td>
+				<td>
+					Coca-cola lata 350ml
+				</td>
+				<td ALIGN=MIDDLE>
+					3,50
+				</td>
+				<td ALIGN=MIDDLE>
+					7,00
+				</td>
+				<td>
+					Rodrigo
+				</td>
+				<td ALIGN=MIDDLE>
+					1
+				</td>
+			</tr>
+			<tr>
+				<td ALIGN=MIDDLE>
+					1
+				</td>
+				<td>
+					Fritas com Cheddar
+				</td>
+				<td ALIGN=MIDDLE>
+					13,00
+				</td>
+				<td ALIGN=MIDDLE>
+					13,00
+				</td>
+				<td>
+					Rodrigo
+				</td>
+				<td ALIGN=MIDDLE>
+					2
+				</td>
+			</tr>
+			<tr>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+			</tr>
+			<tr>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+			</tr>
+			<tr>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+			</tr>
+			<tr>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+			</tr>
+			<tr>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+			</tr>
+			<tr>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+			</tr>
+			<tr>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+			</tr>
+			<tr>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+			</tr>
+			<tr>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+			</tr>
+			<tr>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+			</tr>
+			<tr>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE bgcolor="#F2F2F2">
+					Total
+				</td>
+				<td ALIGN=MIDDLE bgcolor="#F2F2F2">
+					20,00
+				</td>
+				<td>
+					&nbsp
+				</td>
+				<td ALIGN=MIDDLE>
+					&nbsp
+				</td>
+			</tr>
+		</table>
+		<table>
+			<tr bgcolor="#E6E6E6">
+				<td WIDTH=540>
+					&nbsp&nbsp&nbsp+Entrega: 0,00
+				</td>
+				<td WIDTH=200>
+					+Serviço: 2,00
+				</td>
+				<td>
+					=A Pagar: 22,00
+				</td>
+			</tr>
+		</table>
 		<table>
 			<tr bgcolor="#F2F2F2">
-			<div class="excluir-posicao">
-            	<button class="excluir"><img style="width:60px;" src="Mesas/icExcluir.png">&nbsp;Excluir Pedido&nbsp;&nbsp;&nbsp;</button>
-            </div>
-            <div class="calc-posicao">
-            	<button class="calc"><img style="width:50px;" src="Mesas/calc.png">&nbsp;Pagamento&nbsp;&nbsp;&nbsp;</button>
-            </div>
-            <div class="print-posicao">
-            	<button class="print"><img style="width:50px;" src="Mesas/print.png">&nbsp;Imprimir&nbsp;&nbsp;</button>
-            </div>
-            <div class="sair-posicao">
-            <button class="sair"><a href="Principal.jsp"> <img style="width:60px;" src="Mesas/icVoltar.png">&nbsp;Sair </a></button>
-        	</div>
+				<td>
+					<input type="image" src="Mesas/icExcluir.png">
+				</td>
+				<td WIDTH=493>
+					<b>Excluir Pedido</b>
+				</td>
+				<td>
+					<input type="image" src="Mesas/calculadora.png">
+				</td>
+				<td WIDTH=200>
+					<b>Pagamento</b>
+				</td>
+				<td>
+					<input type="image" src="Mesas/icVoltar.png">
+				</td>
+				<td>
+					<b>Voltar</b>
+				</td>
 			</tr>
 		</table>
 	</p>
 	<br>
-</div>
 </div>
 </body>
 <script type="text/javascript">

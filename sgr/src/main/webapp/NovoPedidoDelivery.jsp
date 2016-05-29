@@ -2,14 +2,113 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>DI Gestão</title>
-        <link rel="stylesheet" href="Css/estiloPedidos.css"/>
+        <title>Novo Pedido Delivery</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Css/estiloPedidos.css">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div class="container-geral">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<body>
+
+<nav class="navbar navbar-default navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="Login.jsp">DI - Gestão</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato: xxxx@xxxx.com</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      	<li class="active"><a>Usuário</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="Css/estiloMesas.css" rel="stylesheet">
+
+<div class="nav-side-menu">
+    <div class="brand">Menu</div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+  
+        <div class="menu-list">
+  
+            <ul id="menu-content" class="menu-content collapse out">
+                <li>
+                  <a href="Mesas.jsp">
+                  <i class="fa fa-dashboard fa-lg"></i> Mesas
+                  </a>
+                </li>
+
+                <li  data-toggle="collapse" data-target="#pedidos">
+                  <a href="#"><i class="fa fa-gift fa-lg"></i> Pedidos <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="pedidos">
+                    <li><a href="#">Pedidos em Andamento</a></li>
+                    <li><a href="#">Pedidos Finalizados</a></li>
+                    <li data-toggle="collapse" data-target="#pedidosF">
+                    	<a href="#">Pedidos Delivery<span class="arrow"></a>
+                    	<ul class="sub-menu collapse" id="pedidosF">
+                    		<li class="pedidosEntrega"><a href="http://localhost:8080/sgr/NovoPedidoDelivery.jsp#">Novo Pedido</a></li>
+                    	</ul>	
+                    		
+                    </li>
+                    	
+                </ul>
+
+				
+                <li data-toggle="collapse" data-target="#entregas" class="collapsed">
+                  <a href="#"><i class="fa fa-globe fa-lg"></i> Entregas <span class="arrow"></span></a>
+                </li>  
+                <ul class="sub-menu collapse" id="entregas">
+                  <li>Pedidos</li>
+                  <li>New Service 2</li>
+                  <li>New Service 3</li>
+                </ul>
+
+
+                <li data-toggle="collapse" data-target="#new" class="collapsed">
+                  <a href="#"><i class="fa fa-car fa-lg"></i> New <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="new">
+                  <li>New New 1</li>
+                  <li>New New 2</li>
+                  <li>New New 3</li>
+                </ul>
+
+
+                 <li>
+                  <a href="#">
+                  <i class="fa fa-user fa-lg"></i> Profile
+                  </a>
+                  </li>
+
+                 <li>
+                  <a href="#">
+                  <i class="fa fa-users fa-lg"></i> Users
+                  </a>
+                </li>
+            </ul>
+     </div>
+</div>
+        
+     
         <div class="container-delivery">
             <table class="pedido-delivery">
                 <tr class="linha-botoes">
@@ -46,10 +145,10 @@
                 </tr>
             </table>
             <table class="entregador-delivery">
-                <caption style="width : 450px;">
-                        <p style="padding:5px 0px 5px 5px;">
+                <caption style="width : 360px;">
+                        <p style="padding:5px 0px 7px 5px;">
                             Entregador:
-                            <select style="width:300px;background-color : white;">
+                            <select style="width:270px;background-color : white;">
                                 <option value="rodrigo">Rodrigo Marden</option>
                                 <option value="matheus">Matheus Assis</option>
                                 <option value="tony">Tony William</option>
@@ -85,12 +184,12 @@
                         <td style="border-bottom:1px solid #E6E6E6;"><p>&nbsp;Código</p></td>
                     </tr>
                     <tr style="background-color : white;">
-                        <td><br><br><br><br><br><br><br><br><br><br><br><br></td>
-                        <td><br><br><br><br><br><br><br><br><br><br><br><br></td>
-                        <td><br><br><br><br><br><br><br><br><br><br><br><br></td>
-                        <td><br><br><br><br><br><br><br><br><br><br><br><br></td>
-                        <td><br><br><br><br><br><br><br><br><br><br><br><br></td>
-                        <td><br><br><br><br><br><br><br><br><br><br><br><br></td>
+                        <td><br><br><br><br><br><br><br><br><br></td>
+                        <td><br><br><br><br><br><br><br><br><br></td>
+                        <td><br><br><br><br><br><br><br><br><br></td>
+                        <td><br><br><br><br><br><br><br><br><br></td>
+                        <td><br><br><br><br><br><br><br><br><br></td>
+                        <td><br><br><br><br><br><br><br><br><br></td>
                     </tr>
                     <tr class="valor-total" style="background-color:#F2F2F2;">
                         <td>
@@ -189,8 +288,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="position:relative;right:30px;">
-                        <br>Observação:&nbsp;&nbsp; <input style="width:380px;" type="text">
+                    <td style="position:relative;left:20px;">
+                        <br>Obs:&nbsp;&nbsp; <input style="width:380px;" type="text">
                         <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <small><em>Exemplo: troco para 50,00</em></small>
                     </td>
@@ -205,7 +304,7 @@
                         <input type="radio" value="iniciado">&nbsp;&nbsp;<img style="width:20px;"src="Mesas/bandeira-amarela.png">&nbsp;Saiu&nbsp;p/&nbsp;entrega</input>
                         <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <input type="radio" value="iniciado">&nbsp;&nbsp;<img style="width:20px;"src="Mesas/bandeira-verde.png">&nbsp;Finalizado&nbsp;/&nbsp;Entregue</input>
-    
+                        <br><br>
                     </td>
                 </tr>
             </table>
@@ -214,8 +313,8 @@
             <button class="excluir"><img style="width:60px;" src="Mesas/icExcluir.png">&nbsp;Excluir Pedido&nbsp;&nbsp;&nbsp;</button>
             <button class="calc"><img style="width:50px;" src="Mesas/calc.png">&nbsp;Pagamento&nbsp;&nbsp;&nbsp;</button>
             <button class="print"><img style="width:50px;" src="Mesas/print.png">&nbsp;Imprimir&nbsp;&nbsp;</button>
-            <button class="sair"><a href="Principal.jsp"> <img style="width:60px;" src="Mesas/icVoltar.png">&nbsp;Sair </a></button>
+            <button class="sair"> <img style="width:60px;" src="Mesas/icVoltar.png">&nbsp;Sair</button>
         </div>
-        </div>
+
     </body>
 </html>

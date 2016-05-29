@@ -63,13 +63,11 @@
                     <li><a href="#">Pedidos em Andamento</a></li>
                     <li><a href="#">Pedidos Finalizados</a></li>
                     <li data-toggle="collapse" data-target="#pedidosF">
-                    	<a href="#">Pedidos para Entregar<span class="arrow"></a>
+                    	<a href="#">Pedidos Delivery<span class="arrow"></a>
                     	<ul class="sub-menu collapse" id="pedidosF">
-                    		<li class="pedidosEntrega"><a href="NovoPedidoDelivery.jsp">Novo Pedido</a></li>
-                    	</ul>	
-                    		
-                    </li>
-                    	
+                    		<li class="pedidosEntrega"><a href="http://localhost:8080/sgr/NovoPedidoDelivery.jsp#">Novo Pedido</a></li>
+                    	</ul>		
+                    </li>	
                 </ul>
 
 				
@@ -112,7 +110,7 @@
 		<table class="tabela" width="100%"> 
 			<tr> 
 			   <td bgcolor="#BDBDBD"> 
-					<h5><b>&nbsp&nbsp&nbsp<strong>Mesas</strong></b></h5> 
+					<h5><b>&nbsp&nbsp&nbspMesas</b></h5> 
 				</td> 
 			</tr> 
 		</table>
