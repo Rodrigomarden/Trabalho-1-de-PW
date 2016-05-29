@@ -63,11 +63,13 @@
                     <li><a href="#">Pedidos em Andamento</a></li>
                     <li><a href="#">Pedidos Finalizados</a></li>
                     <li data-toggle="collapse" data-target="#pedidosF">
-                    	<a href="#">Pedidos Delivery<span class="arrow"></a>
+                    	<a href="#">Pedidos para Entregar<span class="arrow"></a>
                     	<ul class="sub-menu collapse" id="pedidosF">
-                    		<li class="pedidosEntrega"><a href="http://localhost:8080/sgr/NovoPedidoDelivery.jsp#">Novo Pedido</a></li>
-                    	</ul>		
-                    </li>	
+                    		<li class="pedidosEntrega"><a href="NovoPedidoDelivery.jsp">Novo Pedido</a></li>
+                    	</ul>	
+                    		
+                    </li>
+                    	
                 </ul>
 
 				
@@ -110,7 +112,7 @@
 		<table class="tabela" width="100%"> 
 			<tr> 
 			   <td bgcolor="#BDBDBD"> 
-					<h5><b>&nbsp&nbsp&nbspMesas</b></h5> 
+					<h5><b>&nbsp&nbsp&nbsp<strong>Mesas</strong></b></h5> 
 				</td> 
 			</tr> 
 		</table>
@@ -129,298 +131,293 @@
 		 </table>
 		 <br>
 		 <!--Primeira Linha de Mesas-->
-		 <table>
-		 	<tr bgcolor="#D8D8D8" style="font-size: 15px">
-		 		<!--Mesa 1-->
-		 		<td>
-		 			<a href="Mesa001.jsp">
-				 		&nbsp&nbsp&nbspMesa&nbsp<b>001</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			 		</a>
-			 	</td>
-		 		<td bgcolor="#FFFFFF">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		 		</td>
-		 		<!--Mesa 2-->
-		 		<td>
-		 			<a href="#">
-				 		&nbsp&nbsp&nbspMesa&nbsp<b>002</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			 		</a>
-			 	</td>
-		 		<td bgcolor="#FFFFFF">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		 		</td>
-		 		<td>
-		 		<!--Mesa 3-->
-			 		<a href="#">
-				 		&nbsp&nbsp&nbspMesa&nbsp<b>003</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			 		</a>
-		 		</td>
-		 	</tr>
-		 	<tr bgcolor="#F2F2F2">
-		 		<td style="font-size: 13px">
-		 		<input type="image" src="Mesas/relogio.png">
-		 		Tempo: &nbsp&nbsp
-		 		<input type="image" src="Mesas/calculadora.png">
-		 		Sub total: &nbsp&nbsp
-		 		<input type="image" src="Mesas/garc.png">
-		 		Atendente:
-		 		</td>
-		 		<td bgcolor="#FFFFFF">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		 		</td><td style="font-size: 13px">
-		 		<input type="image" src="Mesas/relogio.png">
-		 		Tempo: &nbsp&nbsp
-		 		<input type="image" src="Mesas/calculadora.png">
-		 		Sub total: &nbsp&nbsp
-		 		<input type="image" src="Mesas/garc.png">
-		 		Atendente:
-		 		</td>
-		 		<td bgcolor="#FFFFFF">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		 		</td>
-		 		<td style="font-size: 13px">
-		 		<input type="image" src="Mesas/relogio.png">
-		 		Tempo: &nbsp&nbsp
-		 		<input type="image" src="Mesas/calculadora.png">
-		 		Sub total: &nbsp&nbsp
-		 		<input type="image" src="Mesas/garc.png">
-		 		Atendente:
-		 		</td>
-		 		<td bgcolor="#FFFFFF">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		 		</td>
-		 	</tr>
-		 	<tr bgcolor="#F2F2F2">
-		 		<td style="font-size: 13px">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp00:02m
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspR$5,00
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Tony Willian
-		 		</td>
-		 		<td bgcolor="#FFFFFF">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		 		</td>
-		 		<td style="font-size: 13px">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp00:00m
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspR$0,00
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNão Informado
-		 		</td>
-		 		<td bgcolor="#FFFFFF">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		 		</td>
-		 		<td style="font-size: 13px">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp15:00m
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspR$20,00
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRodrigo Marden
-		 		</td>
-		 		<td bgcolor="#FFFFFF">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		 		</td>
-		 	</tr>
-		 </table>
+		 <table class="pedido-mesa">
+                <tr class="linha-botoes">
+                    <caption style="background-color : #D8D8D8;height:40px;">
+                        <a href="Mesa001.jsp"><h5>Mesa &nbsp;<span style="font-size:20px;"><strong>001</strong></span></h5></a>
+                    </caption>
+                </tr> 
+                <tr bgcolor="#F2F2F2">
+                    <td>
+                        <p><img src="Mesas/relogio.png"/>&nbsp;Tempo:</p>
+                    </td>
+                    <td>
+                        <p><img src="Mesas/calculadora.png"/>&nbsp;Subtotal:</p>                     
+                    </td>
+                    
+                    <td>
+                        <p><img src="Mesas/garc.png"/>&nbsp;Entregador:</p>                        
+                    </td>
+                </tr>
+                <tr class="informacoes-delibery" bgcolor="#F2F2F2">
+                    <td>00h15m</td>
+                    <td>R$ 20,00</td>
+                    <td>Rodrigo Marden</td>
+                </tr>
+                <tr bgcolor="#F2F2F2">
+                    <td><br></td>
+                    <td><br></td>
+                    <td><br></td>
+                </tr>
+            </table>
+   			<div class="posicao-mesa-002">
+			<table class="pedido-mesa">
+                <tr class="linha-botoes">
+                    <caption style="background-color : #D8D8D8;height:40px;">
+                        <a href="#"><h5>Mesa &nbsp;<span style="font-size:20px;"><strong>002</strong></span></h5></a>
+                    </caption>
+                </tr> 
+                <tr bgcolor="#F2F2F2">
+                    <td>
+                        <p><img src="Mesas/relogio.png"/>&nbsp;Tempo:</p>
+                    </td>
+                    <td>
+                        <p><img src="Mesas/calculadora.png"/>&nbsp;Subtotal:</p>                     
+                    </td>
+                    
+                    <td>
+                        <p><img src="Mesas/garc.png"/>&nbsp;Entregador:</p>                        
+                    </td>
+                </tr>
+                <tr class="informacoes-delibery" bgcolor="#F2F2F2">
+                    <td>00h00m</td>
+                    <td>R$ 0,00</td>
+                    <td>Não informado</td>
+                </tr>
+                <tr bgcolor="#F2F2F2">
+                    <td><br></td>
+                    <td><br></td>
+                    <td><br></td>
+                </tr>
+            </table>
+            </div>
+            <div class="posicao-mesa-003">
+			<table class="pedido-mesa">
+                <tr class="linha-botoes">
+                    <caption style="background-color : #D8D8D8;height:40px;">
+                        <a href="#"><h5>Mesa &nbsp;<span style="font-size:20px;"><strong>003</strong></span></h5></a>
+                    </caption>
+                </tr> 
+                <tr bgcolor="#F2F2F2">
+                    <td>
+                        <p><img src="Mesas/relogio.png"/>&nbsp;Tempo:</p>
+                    </td>
+                    <td>
+                        <p><img src="Mesas/calculadora.png"/>&nbsp;Subtotal:</p>                     
+                    </td>
+                    
+                    <td>
+                        <p><img src="Mesas/garc.png"/>&nbsp;Entregador:</p>                        
+                    </td>
+                </tr>
+                <tr class="informacoes-delibery" bgcolor="#F2F2F2">
+                    <td>00h58m</td>
+                    <td>R$ 50,00</td>
+                    <td>Tonny Willian</td>
+                </tr>
+                <tr bgcolor="#F2F2F2">
+                    <td><br></td>
+                    <td><br></td>
+                    <td><br></td>
+                </tr>
+            </table>
+            </div>
 		 <br>
 		 <br>
 		 <br>
 		 <br>
 		 <!--Segunda Linha de Mesas-->
-		 <table>
-		 	<tr bgcolor="#D8D8D8" style="font-size: 15px">
-		 	<!--Mesa 4-->
-		 		<td>
-		 			<a href="#">
-				 		&nbsp&nbsp&nbspMesa&nbsp<b>004</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			 		</a>
-			 	</td>
-		 		<td bgcolor="#FFFFFF">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		 		</td>
-		 		<!--Mesa 5-->
-		 		<td>
-		 			<a href="#">
-				 		&nbsp&nbsp&nbspMesa&nbsp<b>005</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			 		</a>
-			 	</td>
-		 		<td bgcolor="#FFFFFF">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		 		</td>
-		 		<!--Mesa 6-->
-		 		<td>
-			 		<a href="#">
-				 		&nbsp&nbsp&nbspMesa&nbsp<b>006</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			 		</a>
-		 		</td>
-		 	</tr>
-		 	<tr bgcolor="#F2F2F2">
-		 		<td style="font-size: 13px">
-		 		<input type="image" src="Mesas/relogio.png">
-		 		Tempo: &nbsp&nbsp
-		 		<input type="image" src="Mesas/calculadora.png">
-		 		Sub total: &nbsp&nbsp
-		 		<input type="image" src="Mesas/garc.png">
-		 		Atendente:
-		 		</td>
-		 		<td bgcolor="#FFFFFF">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		 		</td><td style="font-size: 13px">
-		 		<input type="image" src="Mesas/relogio.png">
-		 		Tempo: &nbsp&nbsp
-		 		<input type="image" src="Mesas/calculadora.png">
-		 		Sub total: &nbsp&nbsp
-		 		<input type="image" src="Mesas/garc.png">
-		 		Atendente:
-		 		</td>
-		 		<td bgcolor="#FFFFFF">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		 		</td>
-		 		<td style="font-size: 13px">
-		 		<input type="image" src="Mesas/relogio.png">
-		 		Tempo: &nbsp&nbsp
-		 		<input type="image" src="Mesas/calculadora.png">
-		 		Sub total: &nbsp&nbsp
-		 		<input type="image" src="Mesas/garc.png">
-		 		Atendente:
-		 		</td>
-		 		<td bgcolor="#FFFFFF">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		 		</td>
-		 	</tr>
-		 	<tr bgcolor="#F2F2F2">
-		 		<td style="font-size: 13px">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp25:02m
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspR$35,00
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Matheus Assis
-		 		</td>
-		 		<td bgcolor="#FFFFFF">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		 		</td>
-		 		<td style="font-size: 13px">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp00:00m
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspR$0,00
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNão Informado
-		 		</td>
-		 		<td bgcolor="#FFFFFF">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		 		</td>
-		 		<td style="font-size: 13px">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp00:00m
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspR$0,00
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNão Informado
-		 		</td>
-		 		<td bgcolor="#FFFFFF">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		 		</td>
-		 	</tr>
-		 </table>
+		 <div class="posicao-mesa-004">
+			<table class="pedido-mesa">
+                <tr class="linha-botoes">
+                    <caption style="background-color : #D8D8D8;height:40px;">
+                        <a href="#"><h5>Mesa &nbsp;<span style="font-size:20px;"><strong>004</strong></span></h5></a>
+                    </caption>
+                </tr> 
+                <tr bgcolor="#F2F2F2">
+                    <td>
+                        <p><img src="Mesas/relogio.png"/>&nbsp;Tempo:</p>
+                    </td>
+                    <td>
+                        <p><img src="Mesas/calculadora.png"/>&nbsp;Subtotal:</p>                     
+                    </td>
+                    
+                    <td>
+                        <p><img src="Mesas/garc.png"/>&nbsp;Entregador:</p>                        
+                    </td>
+                </tr>
+                <tr class="informacoes-delibery" bgcolor="#F2F2F2">
+                    <td>01h02m</td>
+                    <td>R$ 89,00</td>
+                    <td>Matheus Assis</td>
+                </tr>
+                <tr bgcolor="#F2F2F2">
+                    <td><br></td>
+                    <td><br></td>
+                    <td><br></td>
+                </tr>
+            </table>
+            </div>
+            <div class="posicao-mesa-005">
+			<table class="pedido-mesa">
+                <tr class="linha-botoes">
+                    <caption style="background-color : #D8D8D8;height:40px;">
+                        <a href="#"><h5>Mesa &nbsp;<span style="font-size:20px;"><strong>005</strong></span></h5></a>
+                    </caption>
+                </tr> 
+                <tr bgcolor="#F2F2F2">
+                    <td>
+                        <p><img src="Mesas/relogio.png"/>&nbsp;Tempo:</p>
+                    </td>
+                    <td>
+                        <p><img src="Mesas/calculadora.png"/>&nbsp;Subtotal:</p>                     
+                    </td>
+                    
+                    <td>
+                        <p><img src="Mesas/garc.png"/>&nbsp;Entregador:</p>                        
+                    </td>
+                </tr>
+                <tr class="informacoes-delibery" bgcolor="#F2F2F2">
+                    <td>00h00m</td>
+                    <td>R$ 0,00</td>
+                    <td>Não informado</td>
+                </tr>
+                <tr bgcolor="#F2F2F2">
+                    <td><br></td>
+                    <td><br></td>
+                    <td><br></td>
+                </tr>
+            </table>
+            </div>
+            <div class="posicao-mesa-006">
+			<table class="pedido-mesa">
+                <tr class="linha-botoes">
+                    <caption style="background-color : #D8D8D8;height:40px;">
+                        <a href="#"><h5>Mesa &nbsp;<span style="font-size:20px;"><strong>006</strong></span></h5></a>
+                    </caption>
+                </tr> 
+                <tr bgcolor="#F2F2F2">
+                    <td>
+                        <p><img src="Mesas/relogio.png"/>&nbsp;Tempo:</p>
+                    </td>
+                    <td>
+                        <p><img src="Mesas/calculadora.png"/>&nbsp;Subtotal:</p>                     
+                    </td>
+                    
+                    <td>
+                        <p><img src="Mesas/garc.png"/>&nbsp;Entregador:</p>                        
+                    </td>
+                </tr>
+                <tr class="informacoes-delibery" bgcolor="#F2F2F2">
+                    <td>00h00m</td>
+                    <td>R$ 00,00</td>
+                    <td>Não informado</td>
+                </tr>
+                <tr bgcolor="#F2F2F2">
+                    <td><br></td>
+                    <td><br></td>
+                    <td><br></td>
+                </tr>
+            </table>
+            </div>
 		 <br>
 		 <br>
 		 <br>
 		 <br>
 		 <!--Terceira Linha de Mesas-->
-		 <table>
-		 	<tr bgcolor="#D8D8D8" style="font-size: 15px">
-		 	<!--Mesa 7-->
-		 		<td>
-		 			<a href="#">
-				 		&nbsp&nbsp&nbspMesa&nbsp<b>007</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			 		</a>
-			 	</td>
-		 		<td bgcolor="#FFFFFF">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		 		</td>
-		 		<!--Mesa 8-->
-		 		<td>
-		 			<a href="#">
-				 		&nbsp&nbsp&nbspMesa&nbsp<b>008</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			 		</a>
-			 	</td>
-		 		<td bgcolor="#FFFFFF">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		 		</td>
-		 		<!--Mesa 9-->
-		 		<td>
-			 		<a href="#">
-				 		&nbsp&nbsp&nbspMesa&nbsp<b>009</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-				 		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			 		</a>
-		 		</td>
-		 	</tr>
-		 	<tr bgcolor="#F2F2F2">
-		 		<td style="font-size: 13px">
-		 		<input type="image" src="Mesas/relogio.png">
-		 		Tempo: &nbsp&nbsp
-		 		<input type="image" src="Mesas/calculadora.png">
-		 		Sub total: &nbsp&nbsp
-		 		<input type="image" src="Mesas/garc.png">
-		 		Atendente:
-		 		</td>
-		 		<td bgcolor="#FFFFFF">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		 		</td><td style="font-size: 13px">
-		 		<input type="image" src="Mesas/relogio.png">
-		 		Tempo: &nbsp&nbsp
-		 		<input type="image" src="Mesas/calculadora.png">
-		 		Sub total: &nbsp&nbsp
-		 		<input type="image" src="Mesas/garc.png">
-		 		Atendente:
-		 		</td>
-		 		<td bgcolor="#FFFFFF">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		 		</td>
-		 		<td style="font-size: 13px">
-		 		<input type="image" src="Mesas/relogio.png">
-		 		Tempo: &nbsp&nbsp
-		 		<input type="image" src="Mesas/calculadora.png">
-		 		Sub total: &nbsp&nbsp
-		 		<input type="image" src="Mesas/garc.png">
-		 		Atendente:
-		 		</td>
-		 		<td bgcolor="#FFFFFF">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		 		</td>
-		 	</tr>
-		 	<tr bgcolor="#F2F2F2">
-		 		<td style="font-size: 13px">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp00:00m
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspR$0,00
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNão Informado
-		 		</td>
-		 		<td bgcolor="#FFFFFF">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		 		</td>
-		 		<td style="font-size: 13px">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp00:00m
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspR$0,00
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNão Informado
-		 		</td>
-		 		<td bgcolor="#FFFFFF">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		 		</td>
-		 		<td style="font-size: 13px">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp00:00m
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspR$0,00
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNão Informado
-		 		</td>
-		 		<td bgcolor="#FFFFFF">
-		 			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		 		</td>
-		 	</tr>
-		 </table>
+		 <div class="posicao-mesa-007">
+			<table class="pedido-mesa">
+                <tr class="linha-botoes">
+                    <caption style="background-color : #D8D8D8;height:40px;">
+                        <a href="#"><h5>Mesa &nbsp;<span style="font-size:20px;"><strong>007</strong></span></h5></a>
+                    </caption>
+                </tr> 
+                <tr bgcolor="#F2F2F2">
+                    <td>
+                        <p><img src="Mesas/relogio.png"/>&nbsp;Tempo:</p>
+                    </td>
+                    <td>
+                        <p><img src="Mesas/calculadora.png"/>&nbsp;Subtotal:</p>                     
+                    </td>
+                    
+                    <td>
+                        <p><img src="Mesas/garc.png"/>&nbsp;Entregador:</p>                        
+                    </td>
+                </tr>
+                <tr class="informacoes-delibery" bgcolor="#F2F2F2">
+                    <td>00h00m</td>
+                    <td>R$ 00,00</td>
+                    <td>Não informado</td>
+                </tr>
+                <tr bgcolor="#F2F2F2">
+                    <td><br></td>
+                    <td><br></td>
+                    <td><br></td>
+                </tr>
+            </table>
+            </div>
+            <div class="posicao-mesa-008">
+			<table class="pedido-mesa">
+                <tr class="linha-botoes">
+                    <caption style="background-color : #D8D8D8;height:40px;">
+                        <a href="#"><h5>Mesa &nbsp;<span style="font-size:20px;"><strong>008</strong></span></h5></a>
+                    </caption>
+                </tr> 
+                <tr bgcolor="#F2F2F2">
+                    <td>
+                        <p><img src="Mesas/relogio.png"/>&nbsp;Tempo:</p>
+                    </td>
+                    <td>
+                        <p><img src="Mesas/calculadora.png"/>&nbsp;Subtotal:</p>                     
+                    </td>
+                    
+                    <td>
+                        <p><img src="Mesas/garc.png"/>&nbsp;Entregador:</p>                        
+                    </td>
+                </tr>
+                <tr class="informacoes-delibery" bgcolor="#F2F2F2">
+                    <td>00h00m</td>
+                    <td>R$ 00,00</td>
+                    <td>Não informado</td>
+                </tr>
+                <tr bgcolor="#F2F2F2">
+                    <td><br></td>
+                    <td><br></td>
+                    <td><br></td>
+                </tr>
+            </table>
+            </div>
+            <div class="posicao-mesa-009">
+			<table class="pedido-mesa">
+                <tr class="linha-botoes">
+                    <caption style="background-color : #D8D8D8;height:40px;">
+                        <a href="#"><h5>Mesa &nbsp;<span style="font-size:20px;"><strong>009</strong></span></h5></a>
+                    </caption>
+                </tr> 
+                <tr bgcolor="#F2F2F2">
+                    <td>
+                        <p><img src="Mesas/relogio.png"/>&nbsp;Tempo:</p>
+                    </td>
+                    <td>
+                        <p><img src="Mesas/calculadora.png"/>&nbsp;Subtotal:</p>                     
+                    </td>
+                    
+                    <td>
+                        <p><img src="Mesas/garc.png"/>&nbsp;Entregador:</p>                        
+                    </td>
+                </tr>
+                <tr class="informacoes-delibery" bgcolor="#F2F2F2">
+                    <td>00h00m</td>
+                    <td>R$ 00,00</td>
+                    <td>Não informado</td>
+                </tr>
+                <tr bgcolor="#F2F2F2">
+                    <td><br></td>
+                    <td><br></td>
+                    <td><br></td>
+                </tr>
+            </table>
+            </div>
 	</p>
 	<br>
 </div>
