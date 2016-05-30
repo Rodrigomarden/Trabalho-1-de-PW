@@ -63,7 +63,7 @@
                     <li><a href="#">Pedidos em Andamento</a></li>
                     <li><a href="#">Pedidos Finalizados</a></li>
                     <li data-toggle="collapse" data-target="#pedidosF">
-                    	<a href="#">Pedidos para Entregar<span class="arrow"></a>
+                    	<a href="#">Pedidos Delivery<span class="arrow"></a>
                     	<ul class="sub-menu collapse" id="pedidosF">
                     		<li class="pedidosEntrega"><a href="NovoPedidoDelivery.jsp">Novo Pedido</a></li>
                     	</ul>	
@@ -214,7 +214,7 @@
             	<button class="excluir"><img style="width:60px;" src="Mesas/icExcluir.png">&nbsp;Excluir Pedidoo&nbsp;&nbsp;&nbsp;</button>
             </div>
             <div class="calc-posicao">
-            	<button class="calc"><img style="width:50px;" src="Mesas/calc.png">&nbsp;Pagamento&nbsp;&nbsp;&nbsp;</button>
+            	<button class="calc"><a href="Pagamento.jsp"><img style="width:50px;" src="Mesas/calc.png">&nbsp;Pagamento</a>&nbsp;&nbsp;&nbsp;</button>
             </div>
             <div class="print-posicao">
             	<button class="print"><img style="width:50px;" src="Mesas/print.png">&nbsp;Imprimir&nbsp;&nbsp;</button>

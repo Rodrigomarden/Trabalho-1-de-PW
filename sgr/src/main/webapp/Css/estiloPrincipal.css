@@ -1,8 +1,9 @@
-        body{
-    background:url('http://www.pepessb.com/img/hero/home.jpg');
-    padding:50px;
+.background-body{
+	background:url('http://www.pepessb.com/img/hero/home.jpg');
 }
-
+body{
+	padding:50px;
+}
 .pedidosEntrega {
 	position:relative;
 	left:15px;

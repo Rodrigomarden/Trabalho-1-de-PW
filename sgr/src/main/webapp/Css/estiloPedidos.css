@@ -1,13 +1,11 @@
-body{
-    align-items
-}
+
 .container-delivery{
     text-align : center;
     position : relative;
     transform:translateX(340px);
     width : 650px;
     bottom : 30px;
-    display : inline-block;
+    display : block;
     float : left;
 }
 .pedido-delivery{
@@ -134,6 +132,7 @@ body{
     transform:translateX(350px);
     padding-top : 10px;
     display : inline-block;
+    clear : right;
 }
 .delivery input{
     border-radius : 5px;
@@ -142,22 +141,18 @@ body{
     border-radius : 5px;
     float : left;
     position : relative;
-    bottom : 50px;
+    bottom : 25px;
+    left : 350px;
     margin-left : 10px;
-    padding : 8px;
-    display : inline;
-}
-.excluir,.print,.calc,.sair{
     border:none;
     background-color:white;
-    position : relative;
-    left : 350px;
-    top : 15px;
     display : inline-block;
+    clear : right;
 }
 .print,.calc,.sair{
-    position : relative;
-    left : 400px;
+	display : inline;
+	position : relative;
+	right : 100px;
 }
 .excluir:hover,.print:hover,.calc:hover,.sair:hover{
     transform:scale(1.2);

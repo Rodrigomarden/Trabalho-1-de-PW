@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<span class="background-body">
 <head>
     <meta charset="utf-8">
     <title>Di Gestão</title>
@@ -9,10 +11,10 @@
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
+
 <body>
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <body>
-
 <nav class="navbar navbar-default navbar-inverse" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -66,7 +68,7 @@
                     <li data-toggle="collapse" data-target="#pedidosF">
                     	<a href="#">Pedidos Delivery<span class="arrow"></a>
                     	<ul class="sub-menu collapse" id="pedidosF">
-                    		<li class="pedidosEntrega"><a href="http://localhost:8080/sgr/NovoPedidoDelivery.jsp">Novo Pedido</a></li>
+                    		<li class="pedidosEntrega"><a href="NovoPedidoDelivery.jsp">Novo Pedido</a></li>
                     	</ul>	
                     		
                     </li>
@@ -113,4 +115,5 @@
 <script type="text/javascript">
 </script>
 </body>
+</span>
 </html>

@@ -65,7 +65,7 @@
                     <li data-toggle="collapse" data-target="#pedidosF">
                     	<a href="#">Pedidos Delivery<span class="arrow"></a>
                     	<ul class="sub-menu collapse" id="pedidosF">
-                    		<li class="pedidosEntrega"><a href="http://localhost:8080/sgr/NovoPedidoDelivery.jsp#">Novo Pedido</a></li>
+                    		<li class="pedidosEntrega"><a href="NovoPedidoDelivery.jsp#">Novo Pedido</a></li>
                     	</ul>	
                     		
                     </li>
@@ -297,7 +297,7 @@
                 <tr>
                     <td>
                         <br>
-                        Status:&nbsp;&nbsp;<input type="radio" value="iniciado">&nbsp;&nbsp;<img style="width:20px;"src="Mesas/bandeira-azul.png">&nbsp;Iniciado</input>
+                        Status:&nbsp;&nbsp;&nbsp;<input type="radio" value="iniciado">&nbsp;&nbsp;<img style="width:20px;"src="Mesas/bandeira-azul.png">&nbsp;Iniciado</input>
                         <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <input type="radio" value="iniciado">&nbsp;&nbsp;<img style="width:20px;"src="Mesas/bandeira-red.png">&nbsp;Aguardando&nbsp;/&nbsp;Em espera</input>
                         <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -310,8 +310,8 @@
             </table>
         </div>
         <div class="pagar-sair-excluir">
-            <button class="excluir"><img style="width:60px;" src="Mesas/icExcluir.png">&nbsp;Excluir Pedido&nbsp;&nbsp;&nbsp;</button>
-            <button class="calc"><img style="width:50px;" src="Mesas/calc.png">&nbsp;Pagamento&nbsp;&nbsp;&nbsp;</button>
+            <button class="excluir"><img style="width:60px;" src="Mesas/icExcluir.png">&nbsp;Excluir Pedido</button>
+            <button class="calc"><a href="Pagamento.jsp"><img style="width:50px;" src="Mesas/calc.png">&nbsp;>Pagamento</a>&nbsp;&nbsp;&nbsp;</button>
             <button class="print"><img style="width:50px;" src="Mesas/print.png">&nbsp;Imprimir&nbsp;&nbsp;</button>
             <button class="sair"> <img style="width:60px;" src="Mesas/icVoltar.png">&nbsp;Sair</button>
         </div>
