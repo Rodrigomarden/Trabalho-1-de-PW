@@ -3,6 +3,24 @@
     padding:50px;
 }
 
+input[type=text] {
+  font-family: serif;
+}
+/* webkit solution */
+::-webkit-input-placeholder { 
+  font-family: FontAwesome;
+  text-align:right; 
+}
+/* mozilla solution */
+input:-moz-placeholder { 
+  font-family: FontAwesome;
+  text-align:right; 
+}
+
+.posicao-LocProd{
+    float : left;
+}
+
 .posicao-mesa-002{
 	position: relative;
 	bottom: 149px;
@@ -212,11 +230,24 @@
     margin-left : 630px;
     padding : 8px;
 }
+
+.sair-posicao-LocProd{
+    border-radius : 5px;
+    float : left;
+    position : relative;
+    bottom : 70px;
+    margin-left : 430px;
+    padding : 8px;
+}
+.sairLoc{
+	border:none;
+    background-color:#E6E6E6;
+}
 .excluir,.print,.calc,.sair{
     border:none;
     background-color:white;
 }
-.print,.calc,.sair{
+.print,.calc,.sair,.sairLoc{
     position : relative;
     left : 140px;
 }
