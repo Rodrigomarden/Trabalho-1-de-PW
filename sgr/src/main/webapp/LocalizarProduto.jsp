@@ -1,113 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>DI Gestão</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="Css/estiloPedidos.css"/>
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<meta charset="utf-8">
+<title>DI Gestão</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link href="Css/sb-adm.css" rel="stylesheet">
+<link href="Css/morris.css">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script
+	src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-<body>
+	<link
+		href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+		rel="stylesheet">
 
-<nav class="navbar navbar-default navbar-inverse" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="Login.jsp">DI - Gestão</a>
-    </div>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target=".navbar-ex1-collapse">
+				<span class="sr-only">Toggle navigation</span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="Principal.jsp">Di-Gestão</a>
+		</div>
+		<!-- Top Menu Items -->
+		<ul class="nav navbar-right top-nav">
+			<li class="dropdown"><a href="#" class="dropdown-toggle"
+				data-toggle="dropdown"><i class="fa fa-bell"></i> <b
+					class="caret"></b></a>
+				<ul class="dropdown-menu alert-dropdown">
+					<li><a href="#">Mesa 01 <span class="label label-default">Fechada</span></a>
+					</li>
+					<li><a href="#">Mesa 07 <span class="label label-primary">Aberta</span></a>
+					</li>
+					<li><a href="#">Mesa 14 <span class="label label-success">Vazia</span></a>
+					</li>
+					<li><a href="#">Mesa 03 <span class="label label-info">Em
+								atendimento</span></a></li>
+					<li><a href="#">Mesa 13 <span class="label label-warning">Esperando</span></a>
+					</li>
+					<li><a href="#">Mesa 05 <span class="label label-danger">Cancelado</span></a>
+					</li>
+					<li class="divider"></li>
+					<li><a href="Mesas.jsp">Ver Todas</a></li>
+				</ul></li>
+			<li class="dropdown"><a href="#" class="dropdown-toggle"
+				data-toggle="dropdown"><i class="fa fa-user"></i> Usuário <b
+					class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li><a href="#"><i class="fa fa-fw fa-user"></i> Perfil</a></li>
+					<li><a href="#"><i class="fa fa-fw fa-gear"></i>
+							Configurações</a></li>
+					<li class="divider"></li>
+					<li><a href="Login.jsp"><i class="fa fa-fw fa-power-off"></i>
+							Sair</a></li>
+				</ul></li>
+		</ul>
+		<!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+		<div class="collapse navbar-collapse navbar-ex1-collapse">
+			<ul class="nav navbar-nav side-nav">
+				<li class="active"><a href="Mesas.jsp"><i class="fa fa-fw fa-th-list"></i>
+						Mesas</a></li>
+				<li><a href="NovoPedidoDelivery.jsp"><i
+						class="fa fa-fw fa-car"></i> Entregas </a></li>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Contato: xxxx@xxxx.com</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-      	<li class="active"><a>Usuário</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-<link href="Css/estiloMesas.css" rel="stylesheet">
-
-<div class="nav-side-menu">
-    <div class="brand">Menu</div>
-    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
-  
-        <div class="menu-list">
-  
-            <ul id="menu-content" class="menu-content collapse out">
-                <li>
-                  <a href="Mesas.jsp">
-                  <i class="fa fa-dashboard fa-lg"></i> Mesas
-                  </a>
-                </li>
-
-                <li  data-toggle="collapse" data-target="#pedidos">
-                  <a href="#"><i class="fa fa-gift fa-lg"></i> Pedidos <span class="arrow"></span></a>
-                </li>
-                <ul class="sub-menu collapse" id="pedidos">
-                    <li><a href="#">Pedidos em Andamento</a></li>
-                    <li><a href="#">Pedidos Finalizados</a></li>
-                    <li data-toggle="collapse" data-target="#pedidosF">
-                    	<a href="#">Pedidos Delivery<span class="arrow"></a>
-                    	<ul class="sub-menu collapse" id="pedidosF">
-                    		<li class="pedidosEntrega"><a href="NovoPedidoDelivery.jsp">Novo Pedido</a></li>
-                    	</ul>	
-                    		
-                    </li>
-                    	
-                </ul>
-
-				
-                <li data-toggle="collapse" data-target="#entregas" class="collapsed">
-                  <a href="#"><i class="fa fa-globe fa-lg"></i> Entregas <span class="arrow"></span></a>
-                </li>  
-                <ul class="sub-menu collapse" id="entregas">
-                  <li>Pedidos</li>
-                  <li>New Service 2</li>
-                  <li>New Service 3</li>
-                </ul>
+				<li><a href="Gestao.jsp"><i
+						class="fa fa-fw fa-line-chart"></i> Gestão</a></li>
+			</ul>
+		</div>
+		<!-- /.navbar-collapse -->
+	</nav>
 
 
-                <li data-toggle="collapse" data-target="#new" class="collapsed">
-                  <a href="#"><i class="fa fa-car fa-lg"></i> New <span class="arrow"></span></a>
-                </li>
-                <ul class="sub-menu collapse" id="new">
-                  <li>New New 1</li>
-                  <li>New New 2</li>
-                  <li>New New 3</li>
-                </ul>
 
+	<link
+		href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+		rel="stylesheet">
+	<link href="Css/estiloMesas.css" rel="stylesheet">
 
-                 <li>
-                  <a href="#">
-                  <i class="fa fa-user fa-lg"></i> Profile
-                  </a>
-                  </li>
+<div class="container-fluid">
 
-                 <li>
-                  <a href="#">
-                  <i class="fa fa-users fa-lg"></i> Users
-                  </a>
-                </li>
-            </ul>
-     </div>
-</div>
-<link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css' type='text/css'>
 <div class="mesaJanela">
 	<div class="container-geral">
 	<div class="container-mesa">
@@ -269,6 +245,7 @@
         </div>	
 	</p>
 	<br>
+</div>
 </div>
 </div>
 </body>

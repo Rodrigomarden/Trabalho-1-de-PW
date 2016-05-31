@@ -133,7 +133,7 @@
 
                 <!--Login conta-->
                 <li class="dropdown">
-                  <!--BotÃ£o de Login-->
+                  <!--Botão de Login-->
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                     <span class="glyphicon glyphicon-log-in"></span>
                     <b>Login</b>
@@ -153,7 +153,7 @@
                           <p id="ou">ou</p>
 
                           <!--Imput do Login-->
-                          <form class="form" role="form" method="post" action="Principal.jsp" accept-charset="UTF-8" id="login-nav">
+                          <form class="form" role="form" method="post" action="Mesas.jsp" accept-charset="UTF-8" id="login-nav">
                             <!--Login-->
                             <div class="form-group">
                               <label class="sr-only" for="Rodrigo">Login</label>
