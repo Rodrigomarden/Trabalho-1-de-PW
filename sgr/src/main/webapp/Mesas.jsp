@@ -118,17 +118,7 @@
 		</table>
 			<br>
 			<br>
-		<table>
-		  <tr>
-		    <td>
-		    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp		    
-		      <a href="#"><input type="image" src="Mesas/nvPedido.png"></a>
-		    </td>
-		    <td>
-		    	<a href="#">Novo Pedido</a>
-		    </td>
-		  </tr>
-		 </table>
+		
 		 <br>
 		 <!--Primeira Linha de Mesas-->
 		 <table class="pedido-mesa">
