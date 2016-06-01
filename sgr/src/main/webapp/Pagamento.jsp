@@ -13,6 +13,7 @@
 		
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="js/sscript.js"></script>
 	</head>
 	
 	<body>
@@ -116,12 +117,12 @@
 			<section class="container-forma_pagamento">
 				<span class="group-button"></span>
 					<p><br>&nbsp;&nbsp;&nbsp;ADICIONAR UM PAGAMENTO:</p>
-					<button type="button"><img style="width:40px;" src="Mesas/dinheiro.png"><strong><br>[A]</strong>&nbsp;DINHEIRO</button>
-					<button type="button"><img style="width:100px;" src="Mesas/cartao.png"><strong><br>[B]</strong>&nbsp;DÉBITO</button>
-					<button type="button"><img style="width:100px;" src="Mesas/cartao.png"><strong><br>[C]</strong>&nbsp;CRÉDITO</button>
+					<button type="button" onclick="modal_dinheiro()"><img style="width:40px;" src="Mesas/dinheiro.png"><strong><br>[A]</strong>&nbsp;DINHEIRO</button>
+					<button type="button" onclick="modal_debito()"><img style="width:100px;" src="Mesas/cartao.png"><strong><br>[B]</strong>&nbsp;DÉBITO</button>
+					<button type="button" onclick="modal_credito()"><img style="width:100px;" src="Mesas/cartao.png"><strong><br>[C]</strong>&nbsp;CRÉDITO</button>
 					<p></p>
-					<button type="button"><img style="width:50px;" src="Mesas/cheque.png"><strong><br>[D]</strong>&nbsp;CHEQUE</button>
-					<button type="button"><img style="width:50px;" src="Mesas/ticket.png"><strong><br>[E]</strong>&nbsp;V. ALIMENTAÇÃO</button>
+					<button type="button" onclick="modal_cheque()"><img style="width:50px;" src="Mesas/cheque.png"><strong><br>[D]</strong>&nbsp;CHEQUE</button>
+					<button type="button" onclick="modal_vale()"><img style="width:50px;" src="Mesas/ticket.png"><strong><br>[E]</strong>&nbsp;V. ALIMENTAÇÃO</button>
 					<button type="button"><img style="width:50px;" src="Mesas/fiado.png"><strong><br>[F]</strong>&nbsp;FIADO</button>
 				</span>
 				<p><br>&nbsp;&nbsp&nbspPAGAMENTOS FEITOS:</p>

@@ -1,0 +1,63 @@
+html{
+	width : 500px;
+}
+body{
+	height : 300px;
+}
+.container-dinheiro{
+	border : 2px solid #D8D8D8;
+	border-radius : 5px;
+	margin : 10px;
+	float : left;
+	background-color : #E6E6E6;
+}
+.pg-dinheiro{
+	border : 2px solid #D8D8D8;
+	border-radius : 5px;
+	float:left;
+	padding : 10px;
+	margin : 10px;
+	background-color : #F2F2F2;
+}
+.valores button{
+	margin-left : 10px;
+	border-radius : 5px;
+	background-color : #848484;
+}
+.valores button:hover{
+	transform:scale(1.1);
+	background-color : white
+}
+.cartoes{
+	border : 2px solid #D8D8D8;
+	border-radius : 5px;
+	float:left;
+	padding : 35px;
+	margin : 10px;
+	background-color : #F2F2F2;
+}
+.icons-debito{
+	transform:translateX(200px);	
+}
+.salvar{
+	 border-radius:5px;
+	 background-color : #F2F2F2;
+}
+.cancelar{
+	border-radius:5px;
+	 background-color : #F2F2F2;
+}
+.cancelar:hover{
+	background-color : #CEE3F6;
+	transform:scale(1.2);
+	border-color : #00BFFF;	
+}
+.salvar:hover{
+	background-color : #CEE3F6;
+	transform:scale(1.2);
+	border-color : #00BFFF;	
+}
+
+
+
+
