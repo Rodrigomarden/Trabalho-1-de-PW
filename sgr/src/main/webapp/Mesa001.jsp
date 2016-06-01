@@ -199,7 +199,7 @@
             	<button class="print"><img style="width:50px;" src="Mesas/print.png">&nbsp;Imprimir&nbsp;&nbsp;</button>
             </div>
             <div class="sair-posicao">
-            <button class="sair"><a href="Mesas.jsp"> <img style="width:60px;" src="Mesas/icVoltar.png">&nbsp;Sair </a></button>
+            <button class="sair"><a href="Mesas.jsp"> <img style="width:60px;" src="Mesas/icVoltar.png">&nbsp;Sair</a></button>
         	</div>
 			</tr>
 		</table>

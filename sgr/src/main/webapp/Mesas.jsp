@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -459,7 +458,6 @@
 		</div>
 	</div>
 	<script type="text/javascript">
-
 </script>
 </body>
 </html>

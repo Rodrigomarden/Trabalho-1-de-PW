@@ -221,7 +221,7 @@
                     <tr style="background-color:#F2F2F2;">
                         <td><br></td>
                     	<td><b>Atendente: </b><select style="width:200px;background-color : white;">
-                                <option value="rodrigo">Rodrigo Marden</option>
+                                <option value="rodrigo">Rodriprego Marden</option>
                                 <option value="matheus">Matheus Assis</option>
                                 <option value="tony">Tony William</option>
                             </select></td>
@@ -239,7 +239,7 @@
                   </table>
                     &nbsp;&nbsp;<span class="chek">&nbsp;&nbsp;&nbsp;&nbsp;<h5>Para adicionar clique uma vez no "+1."</h5></span>
                     <div class="sair-posicao-LocProd">
-            			<button class="sairLoc"><a href="Mesa001.jsp"> <img style="width:60px;" src="Mesas/icVoltar.png">&nbsp;Sair </a></button>
+            			<button class="sairLoc"><a href="Mesas.jsp"> <img style="width:60px;" src="Mesas/icVoltar.png">&nbsp;Sair </a></button>
         			</div>
             </section>
         </div>	

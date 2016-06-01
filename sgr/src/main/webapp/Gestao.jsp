@@ -569,7 +569,7 @@
 											<!-- col-lg-3 -->
 
 											<div class="col-lg-7">
-												<h4>Chefs</h4>
+												<h4 class="text-warning">Chefs</h4>
 												<table class="table table-bordered">
 													<thead>
 														<tr>
@@ -609,7 +609,7 @@
 										</div>
 										<!-- Row -->
 										<div class="col-lg-6">
-											<h4>Cozinheiros</h4>
+											<h4 class="text-warning">Cozinheiros</h4>
 											<table class="table table-bordered">
 												<thead>
 													<tr>
@@ -691,7 +691,7 @@
 											</table>
 										</div>
 										<div class="col-lg-6">
-											<h4>Garçons</h4>
+											<h4 class="text-warning">Garçons</h4>
 											<table class="table table-bordered">
 												<thead>
 													<tr>
@@ -773,7 +773,7 @@
 											</table>
 										</div>
 										<div class="col-lg-12">
-											<h4>Recepcionistas</h4>
+											<h4 class="text-warning">Recepcionistas</h4>
 											<table class="table table-bordered">
 												<thead>
 													<tr>
@@ -804,7 +804,7 @@
 											</table>
 										</div>
 										<div class="col-lg-12">
-											<h4>Entregadores</h4>
+											<h4 class="text-warning">Entregadores</h4>
 											<table class="table table-bordered">
 												<thead>
 													<tr>
@@ -845,12 +845,12 @@
 														<td>Todos</td>
 														<td>Ativo</td>
 													</tr>
-													<tr>
+													<tr class="danger">
 														<td>7</td>
 														<td>Marcos Paulo de Oliveira</td>
 														<td>Matutino, Vespertino</td>
 														<td>Seg,Qua,Sex,Sab,Dom</td>
-														<td>Ativo</td>
+														<td>Férias</td>
 
 													</tr>
 												</tbody>
