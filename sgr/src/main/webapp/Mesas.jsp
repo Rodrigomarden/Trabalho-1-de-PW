@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>DI Gestão</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link
-	href="Css/bootstrap.css"
-	rel="stylesheet">
-<link href="Css/sb-adm.css" rel="stylesheet">
-<link href="Css/morris.css">
-<link
-		href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+	<meta charset="utf-8">
+	<title>DI Gestão</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link
+		href="Css/bootstrap.css"
 		rel="stylesheet">
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script
-	src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<link href="Css/sb-adm.css" rel="stylesheet">
+	<link href="Css/morris.css">
+	<link
+			href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+			rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script
+		src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js">
+	</script>
 </head>
 	
 <body>
-
+	<!-- Menu Superior -->
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
@@ -79,13 +80,13 @@
 	</nav>
 	</nav>
 
-
+	<!-- Css Mesa -->
 	<link
 		href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
 		rel="stylesheet">
 	<link href="Css/estiloMesas.css" rel="stylesheet">
 
-
+	<!-- Descrição Mesas -->
 	<div class="container-fluid">
 		<div class="janela">
 			<p>
@@ -100,6 +101,7 @@
 			</table>
 			<br> <br> <br>
 			<!--Primeira Linha de Mesas-->
+			<!-- Mesa 1 -->
 			<table class="pedido-mesa">
 				<tr class="linha-botoes">
 					<caption style="background-color: #D8D8D8; height: 40px;">
@@ -137,6 +139,7 @@
 					<td><br></td>
 				</tr>
 			</table>
+			<!-- Mesa 2 -->
 			<div class="posicao-mesa-002">
 				<table class="pedido-mesa">
 					<tr class="linha-botoes">
@@ -176,6 +179,7 @@
 					</tr>
 				</table>
 			</div>
+			<!-- Mesa 3 -->
 			<div class="posicao-mesa-003">
 				<table class="pedido-mesa">
 					<tr class="linha-botoes">
@@ -217,6 +221,7 @@
 			</div>
 			<br> <br> <br> <br>
 			<!--Segunda Linha de Mesas-->
+			<!-- Mesa 4 -->
 			<div class="posicao-mesa-004">
 				<table class="pedido-mesa">
 					<tr class="linha-botoes">
@@ -256,6 +261,7 @@
 					</tr>
 				</table>
 			</div>
+			<!-- Mesa 5 -->
 			<div class="posicao-mesa-005">
 				<table class="pedido-mesa">
 					<tr class="linha-botoes">
@@ -295,6 +301,7 @@
 					</tr>
 				</table>
 			</div>
+			<!-- Mesa 6 -->
 			<div class="posicao-mesa-006">
 				<table class="pedido-mesa">
 					<tr class="linha-botoes">
@@ -336,6 +343,7 @@
 			</div>
 			<br> <br> <br> <br>
 			<!--Terceira Linha de Mesas-->
+			<!-- Mesa 7 -->
 			<div class="posicao-mesa-007">
 				<table class="pedido-mesa">
 					<tr class="linha-botoes">
@@ -375,6 +383,7 @@
 					</tr>
 				</table>
 			</div>
+			<!-- Mesa 8 -->
 			<div class="posicao-mesa-008">
 				<table class="pedido-mesa">
 					<tr class="linha-botoes">
@@ -414,6 +423,7 @@
 					</tr>
 				</table>
 			</div>
+			<!-- Mesa 9 -->
 			<div class="posicao-mesa-009">
 				<table class="pedido-mesa">
 					<tr class="linha-botoes">
