@@ -5,9 +5,13 @@
 <title>Di Gestão</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
 <link href="Css/bootstrap.css" rel="stylesheet">
+<!-- Link para o css customizado -->
 <link href="Css/sb-adm.css" rel="stylesheet">
+<!-- Link para o css referente ao plugin que gera o gráfico -->
 <link href="Css/morris.css">
+<!-- Link para os ícones -->
 <link
 	href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
 	rel="stylesheet">
@@ -20,7 +24,7 @@
 <body>
 	<div id="wrapper">
 
-		<!-- Navigation -->
+		<!-- Menu -->
 		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
@@ -32,7 +36,7 @@
 				</button>
 				<a class="navbar-brand" href="Principal.jsp">Di-Gestão</a>
 			</div>
-			<!-- Top Menu Items -->
+			<!-- Itens a direita -->
 			<ul class="nav navbar-right top-nav">
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
 					data-toggle="dropdown"><i class="fa fa-bell"></i> <b
@@ -66,7 +70,7 @@
 					</ul></li>
 			</ul>
 
-			<!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+			<!-- Itens menu lateral  -->
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav side-nav">
 					<li><a href="Mesas.jsp"><i class="fa fa-fw fa-th-list"></i>
@@ -81,17 +85,16 @@
 			<!-- /.navbar-collapse -->
 		</nav>
 
-		<div id="page-wrapper">
+		<div id="page-wrapper"> <!-- Começo da página -->
 
 			<div class="container-fluid">
 
-				<!-- Page Heading -->
-				<div class="row">
+				<!-- Cabeçalho da Página -->
+				<div class="row"> <!-- linha -->
 					<div class="col-lg-12">
 						<h1 class="page-header">
 							Gestão <small> - Informações estratégicas!</small>
 						</h1>
-						<!--Informações de como está o Restaurante-->
 
 						<ol class="breadcrumb">
 							<li class="active"><i class="fa fa-line-chart"></i> Gestão
@@ -102,6 +105,7 @@
 
 				<div class="row">
 					<div class="col-lg-12">
+					<!-- Barra -->
 						<ul class="nav nav-pills nav-justified">
 							<li class="active"><a data-toggle="tab" href="#ped">Pedidos</a></li>
 							<li><a data-toggle="pill" href="#ent">Entregas</a></li>
@@ -110,8 +114,9 @@
 						</ul>
 
 						<div class="tab-content">
+						<!--Primeiro Item da Barra = Pedidos -->
 							<div id="ped" class="tab-pane fade in active">
-
+								<!-- Painel com a descrição -->
 								<div class="panel panel-primary">
 									<div class="panel-body">
 										<h2>Pedidos</h2>
@@ -125,7 +130,8 @@
 										</div>
 									</div>
 								</div>
-
+								
+								<!-- Painel  -->
 								<div class="panel panel-primary">
 									<div class="panel-body">
 										<div class="container-fluid">
@@ -246,6 +252,8 @@
 													</tr>
 												</tbody>
 											</table>
+											
+											<!-- Painel para o Gráfico -->
 											<div class="panel panel-default">
 												<div class="panel-heading">
 													<h3 class="panel-title">
@@ -254,7 +262,7 @@
 													</h3>
 												</div>
 												<div class="panel-body">
-													<div id="morris-area-chart"></div>
+													<div id="morris-area-chart"></div> <!--Gráfico com referência para o morris-data.js-->
 												</div>
 											</div>
 											<div class="panel panel-primary">
@@ -392,13 +400,14 @@
 								<!-- Painel Primary Maior-->
 
 							</div>
+							
+							<!--Primeiro Item da Barra = Entregas -->
 							<div id="ent" class="tab-pane fade">
 								<div class="panel panel-primary">
 									<div class="panel-body">
 										<h2>Entregas</h2>
 										<h4 class="text-muted">Gerenciamento das entregas e suas
 											principais informações:</h4>
-
 									</div>
 								</div>
 
@@ -530,6 +539,8 @@
 								</div>
 								<!-- Painel Primary -->
 							</div>
+							
+							<!--Primeiro Item da Barra = Funcionários -->
 							<div id="funcionarios" class="tab-pane fade">
 								<div class="panel panel-primary">
 									<div class="panel-body">
@@ -546,7 +557,7 @@
 
 
 												<div class="panel-body">
-													<div class="list-group">
+													<div class="list-group"> <!-- Lista -->
 														<a href="#" class="list-group-item"> <span
 															class="badge">3</span> <i class="fa fa-star"></i> Chefs
 														</a> <a href="#" class="list-group-item"> <span
@@ -859,6 +870,7 @@
 									</div>
 								</div>
 							</div>
+							<!--Primeiro Item da Barra = Relatórios -->
 							<div id="relatorios" class="tab-pane fade">
 								<div class="panel panel-primary">
 									<div class="panel-body">
@@ -869,10 +881,11 @@
 										
 									<div class="row">
 									<div class="col-lg-3">
-										<div class="panel panel-info">
-											<div class="panel-heading"><h4>Pedidos</h4></div>
+										<div class="panel panel-info"> 
+											<!--Botões p/ Relarório de Pedidos -->	
+											<div class="panel-heading"><h4>Pedidos</h4></div> 
 											<div class="panel-body">
-												<h4>Diário</h4>
+												<h4>Diário</h4> 
 												<div class="btn-group">
 													<button type="button" class="btn btn-sm btn-primary">Em PDF</button>
 													<button type="button" class="btn btn-sm btn-primary">Em Word</button>
@@ -902,6 +915,7 @@
 										
 										<div class="col-lg-3">
 										<div class="panel panel-info">
+										<!--Botões p/ Relarório de Entregas -->
 											<div class="panel-heading"><h4>Entregas</h4></div>
 											<div class="panel-body">
 												<h4>Diário</h4>
@@ -933,6 +947,7 @@
 										</div>
 										<div class="col-lg-3">
 										<div class="panel panel-info">
+										<!--Botões p/ Relarório de Funcionários -->
 											<div class="panel-heading"><h4>Funcionários</h4></div>
 											<div class="panel-body">
 												<h4>Diário</h4>
@@ -964,6 +979,7 @@
 										</div>
 										<div class="col-lg-3">
 										<div class="panel panel-info">
+										<!--Botões p/ Relarório de Geral -->
 											<div class="panel-heading"><h4>Geral</h4></div>
 											<div class="panel-body">
 												<h4>Diário</h4>
