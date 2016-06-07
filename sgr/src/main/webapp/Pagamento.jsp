@@ -10,7 +10,6 @@
         <link rel="stylesheet" href="Css/bootstrap.css">
         <link href="Css/sb-adm.css" rel="stylesheet">
 		<link href="Css/morris.css">
-		
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <script src="js/sscript.js"></script>
@@ -111,19 +110,19 @@
 				<p style="transform:translateX(18px);">TROCO:<input style="border:none;text-align:right;" type="text" value=",00"></p>
 			</section>
 			<section class="check-descricao">
-				<br><input type="checkbox"><label value="incluir">Incluir o troco no valor recebido</label>
+				<br><input style="transform:translateY(2px);" type="checkbox"><label value="incluir">Incluir o troco no valor recebido</label>
 				<p>Qtde. pessoas:<input style="width:50px;" type="number" min="0" max="20" value="1">&nbsp;&nbsp;Por pessoa: 3,00</p>
 			</section>
 			<section class="container-forma_pagamento">
 				<span class="group-button"></span>
 					<p><br>&nbsp;&nbsp;&nbsp;ADICIONAR UM PAGAMENTO:</p>
-					<button type="button" onclick="modal_dinheiro()"><img style="width:40px;" src="Mesas/dinheiro.png"><strong><br>[A]</strong>&nbsp;DINHEIRO</button>
-					<button type="button" onclick="modal_debito()"><img style="width:100px;" src="Mesas/cartao.png"><strong><br>[B]</strong>&nbsp;DÉBITO</button>
-					<button type="button" onclick="modal_credito()"><img style="width:100px;" src="Mesas/cartao.png"><strong><br>[C]</strong>&nbsp;CRÉDITO</button>
+					<button type="button" onclick="modal_dinheiro()"><img style="width:40px;" src="Mesas/dinheiro.png"><strong><br></strong>&nbsp;DINHEIRO</button>
+					<button type="button" onclick="modal_debito()"><img style="width:100px;" src="Mesas/cartao.png"><strong><br></strong>&nbsp;DÉBITO</button>
+					<button type="button" onclick="modal_credito()"><img style="width:100px;" src="Mesas/cartao.png"><strong><br></strong>&nbsp;CRÉDITO</button>
 					<p></p>
-					<button type="button" onclick="modal_cheque()"><img style="width:50px;" src="Mesas/cheque.png"><strong><br>[D]</strong>&nbsp;CHEQUE</button>
-					<button type="button" onclick="modal_vale()"><img style="width:50px;" src="Mesas/ticket.png"><strong><br>[E]</strong>&nbsp;V. ALIMENTAÇÃO</button>
-					<button type="button"><img style="width:50px;" src="Mesas/fiado.png"><strong><br>[F]</strong>&nbsp;FIADO</button>
+					<button type="button" onclick="modal_cheque()"><img style="width:50px;" src="Mesas/cheque.png"><strong><br></strong>&nbsp;CHEQUE</button>
+					<button type="button" onclick="modal_vale()"><img style="width:50px;" src="Mesas/ticket.png"><strong><br></strong>&nbsp;V. ALIMENTAÇÃO</button>
+					<button type="button"><img style="width:50px;" src="Mesas/bitcoins.png"><strong><br></strong>&nbsp;BITCOIN</button>
 				</span>
 				<p><br>&nbsp;&nbsp&nbspPAGAMENTOS FEITOS:</p>
 			<section class="pagamentos-feitos">
@@ -146,7 +145,7 @@
 					<tr><td><br></td><td><br></td><td><br></td></tr>
 					<tr style="background-color:#F2F2F2">
 						<td>
-							<input style="text-align:right;float:right;border-radius:5px;transform:translateX(100px);" type="text" value="0,00">
+							<input style="text-align:right;float:right;border-radius:5px;transform:translateX(100px);" type="text" value="0,00" ">
 						</td>
 						<td><br></td><td><br></td>
 					</tr>
@@ -154,11 +153,12 @@
 			</section>
 			</section>
 			<section class="menu-pagamento">
-				<button type="submit"><img src="Mesas/lapis.png">Taxas e Descontos</button>
-				<button type="submit"><img src="Mesas/print.png">Imprimir Conta</button>
-				<button type="submit"><img src="Mesas/salvar.png">Finalizar	</button>
-				<button type="submit"><img src="Mesas/print.png">Finalizar e Imprimir Conta</button>
-				<button class="button-voltar" type="submit"><img src="Mesas/icVoltar.png">Voltar</button>
+				<button type="submit"><img src="Mesas/taxa.png">&nbsp;&nbsp;&nbsp;Taxas</button>
+				<button type="submit"><img src="Mesas/print.png">Imprimir</button>
+				<a href="Login.jsp"><button type="submit"><img src="Mesas/salvar.png">Finalizar	</button></a>
+				<button type="submit" onclick="help()"><img src="Mesas/help.png">&nbsp;&nbsp;&nbsp;Ajuda</button>
+				<br><br><br><br><br><br><br><br><br><br>
+				<a href="Mesas.jsp"><button class="button-voltar" type="submit"><img src="Mesas/icVoltar.png">Voltar</button></a>
 			</section>
 		</div>
 		</div>

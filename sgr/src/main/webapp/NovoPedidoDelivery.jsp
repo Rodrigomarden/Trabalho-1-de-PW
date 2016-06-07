@@ -16,6 +16,7 @@
 <script
 	src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
+<script src="js/sscript.js"></script>
 <body>
 	<link
 		href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
@@ -141,7 +142,7 @@
 									<caption style="width: 360px;">
 										<p style="padding: 5px 0px 7px 5px;">
 											Entregador: <select
-												style="width: 270px; background-color: white;">
+												style="width: 200px; background-color: white;">
 												<option value="rodrigo">Rodrigo Marden</option>
 												<option value="matheus">Matheus Assis</option>
 												<option value="tony">Tony William</option>
@@ -382,7 +383,7 @@
 											<small><em>Exemplo: troco para 50,00</em></small></td>
 									</tr>
 									<tr>
-										<td><br> Status:&nbsp;&nbsp;&nbsp;<input
+										<td><br> Status:&nbsp;&nbsp;<input
 											type="radio" value="iniciado">&nbsp;&nbsp;<img
 											style="width: 20px;" src="Mesas/bandeira-azul.png">&nbsp;Iniciado</input>
 											<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -404,9 +405,9 @@
 									<img style="width: 60px;" src="Mesas/icExcluir.png">&nbsp;Excluir
 									Pedido
 								</button>
-								<button class="calc">
+								<button class="calc" onclick="taxa_entrega()">
 									<a href="Pagamento.jsp"><img style="width: 50px;"
-										src="Mesas/calc.png">&nbsp;>Pagamento</a>&nbsp;&nbsp;&nbsp;
+										src="Mesas/calc.png">&nbsp;Pagamento</a>&nbsp;&nbsp;&nbsp;
 								</button>
 								<button class="print">
 									<img style="width: 50px;" src="Mesas/print.png">&nbsp;Imprimir&nbsp;&nbsp;

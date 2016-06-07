@@ -21,12 +21,20 @@
 			</p>
 		</section>
 		<section class="cartoes">
+			<p>
 			<input type="radio"><img style="width:100px;" src="Mesas/visa.png">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<input type="radio"><img class="master" style="width:100px;" src="Mesas/master	.png">
+			</p>
+			<p>
 			<input type="radio"><img style="width:100px;" src="Mesas/hipercard.png">
-			<p><input type="radio"><img style="width:100px;" src="Mesas/amex.png">
-			   <input type="radio"><img style="width:100px;" src="Mesas/outrocartao.png">
-			   <input type="radio"><img style="width:100px;" src="Mesas/diners.png">  
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="radio"><img style="width:100px;" src="Mesas/amex.png">
+			</p>
+			<p>
+			<input type="radio"><img style="width:100px;" src="Mesas/outrocartao.png">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="radio"><img style="width:100px;" src="Mesas/diners.png">  
 			</p>
 			<br>
 			<strong>Número de Autorização:&nbsp;</strong><input style="border-radius:5px;" type="text">

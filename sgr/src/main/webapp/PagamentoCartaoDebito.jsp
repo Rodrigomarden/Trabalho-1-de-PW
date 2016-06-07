@@ -21,13 +21,21 @@
 			</p>
 		</section>
 		<section class="cartoes">
+			<p>
 			<input type="radio"><img style="width:100px;" src="Mesas/visa.png">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<input type="radio"><img class="master" style="width:100px;" src="Mesas/master	.png">
-			<input type="radio"><img style="width:100px;" src="Mesas/hipercard.png">
-			<p><input type="radio"><img style="width:100px;" src="Mesas/amex.png">
-			   <input type="radio"><img style="width:100px;" src="Mesas/outrocartao.png">
-			   <input type="radio"><img style="width:100px;" src="Mesas/diners.png">  
 			</p>
+			<p>
+			<input type="radio"><img style="width:100px;" src="Mesas/hipercard.png">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="radio"><img style="width:100px;" src="Mesas/amex.png">
+			</p>
+			<p>
+			<input type="radio"><img style="width:100px;" src="Mesas/outrocartao.png">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="radio"><img style="width:100px;" src="Mesas/diners.png">  
+			</p>			
 		</section>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<button class="salvar"type="button"><img style="width:50px;" src="Mesas/salvar.png"></button>&nbsp;&nbsp;&nbsp;&nbsp;Salvar

@@ -1,20 +1,19 @@
-container-pagamento{
-	background-color : black;
+.container-pagamento{
 }
 .descricao-pedido{
 	border : 2px solid #D8D8D8;
 	border-radius : 5px 5px 0px 0px;
 	background-color : #FFEFD5;
 	float : left;
-	width : 350px;
+	width : 27%;
 	clear : hold;
 	display : block;
-	margin-left : 340px;
+	margin-left : 170px;
 	text-align : center;
 	border-bottom : none;
 }
 .descricao-pedido input{
-	background-color : white;
+	background-color : #FFEFD5;
 }
 .check-descricao{
 	float : left;
@@ -24,18 +23,18 @@ container-pagamento{
 	background-color : #F2F2F2;
 	display : inline-block;
 	clear : left;
-	margin-left : 360px;
-	width : 350px;
+	margin-left : 190px;
+	width : 27%;
 	padding-left : 20px;
 }
 .container-forma_pagamento{
 	border : 2px solid #D8D8D8;
 	border-radius : 0px 5px 5px 5px;
 	float : left;
-	margin-left : 710px;
-	transform:translateY(-592px);
-	width : 550px;
-	height : 590px;
+	margin-left : 540px;
+	transform:translateY(-618px);
+	width : 44%;
+	height : 618px;	
 }
 .group-button{
 	border : 2px solid;
@@ -53,7 +52,10 @@ button[type="button"]{
 	background-color : #E6E6E6;
 }
 button[type="button"]:hover{
-	transform:scale(1.2);
+	transform:scale(1.1);
+	background-color : #A9F5A9;
+	color : white;
+	border-color : #58FA58;
 }
 .pagamentos-feitos{
 	border : 2px solid #D8D8D8;
@@ -61,22 +63,23 @@ button[type="button"]:hover{
 	display :block;
 	float : left;
 	margin-left : 15px;
-	width : 520px;	
+	width : 95%;	
 }
 .menu-pagamento{
 	border: 2px solid;
 	border-radius : 5px;
-	margin-left : 1260px;
-	height : 590px;
+	margin-left : 1100px;
+	width : 16%;
+	height : 618px;
 	background-color : #545454;
 }
 button[type="submit"] img{
 	width : 50px;
 }
 button[type="submit"]{
-	width : 200px;
+	width : 95%;
 	height : 80px;
-	transform:translateX(15px);
+	margin-left : 4px;
 	margin-top : 5px;
 	background-color : #A8A8A8;
 }
@@ -84,6 +87,10 @@ button[type="submit"]{
 	width : 70px;
 }
 button[type="submit"]:hover{
-	
+	background-color : #CEE3F6;
+	transform:scale(1.1);
+	border-color : #00BFFF;	
+	border-radius : 5px;
+	color : white;
 }
 
