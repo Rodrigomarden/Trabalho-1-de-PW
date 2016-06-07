@@ -5,9 +5,13 @@
 <title>Di Gestão</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
 <link href="Css/bootstrap.css" rel="stylesheet">
+<!-- Link para o css customizado -->
 <link href="Css/sb-adm.css" rel="stylesheet">
+<!-- Link para o css referente ao plugin que gera o gráfico -->
 <link href="Css/morris.css">
+<!-- Link para os ícones -->
 <link
 	href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
 	rel="stylesheet">
@@ -20,7 +24,7 @@
 <body>
 	<div id="wrapper">
 
-		<!-- Navigation -->
+		<!-- Menu -->
 		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
@@ -32,7 +36,7 @@
 				</button>
 				<a class="navbar-brand" href="Principal.jsp">Di-Gestão</a>
 			</div>
-			<!-- Top Menu Items -->
+			<!-- Itens a direita -->
 			<ul class="nav navbar-right top-nav">
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
 					data-toggle="dropdown"><i class="fa fa-bell"></i> <b
@@ -66,7 +70,7 @@
 					</ul></li>
 			</ul>
 
-			<!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+			<!-- Itens menu lateral  -->
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav side-nav">
 					<li><a href="Mesas.jsp"><i class="fa fa-fw fa-th-list"></i>
@@ -80,7 +84,6 @@
 			</div>
 			<!-- /.navbar-collapse -->
 		</nav>
-
 		<div id="page-wrapper">
 
 			<div class="container-fluid">
