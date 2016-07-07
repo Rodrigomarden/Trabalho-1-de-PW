@@ -22,7 +22,7 @@ public class CadastroProdutoController extends HttpServlet {
 	}
 	
 	private double toDouble(HttpServletRequest req, String param, String padrao) {
-		return Integer.parseInt(valor(req, param, padrao));
+		return Double.parseDouble(valor(req, param, padrao));
 	}
 	
 	@Override
