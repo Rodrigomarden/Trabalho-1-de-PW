@@ -30,15 +30,15 @@ public class CadastroProdutoController extends HttpServlet {
 		try {
 			String msg;
 			String op = valor(req, "operacao", "");
-			int codigo = toInt(valor(req, "codigo", ""));
+			int codigo = toInt(req, "codigo", "0");
 			String produto = valor(req, "produto", "");
-			double precounit = toDouble(valor(req, "precounit", ""));
-			int estoque = toInt(valor(req, "estoque", ""));
+			double precounit = toDouble(req, "precounit", "0");
+			int estoque = toInt(req, "estoque", "0");
 			
 			if (op.equals("cadastrar")) {
 				CadastroProdutoDao.cadastrar(codigo, produto, precounit, estoque);
 				msg = "Cadastro realizado com sucesso.";
-				
+				resp.sendRedirect("cadastro");
 			} else if (op.equals("")) {
 				msg = "";
 			} else {

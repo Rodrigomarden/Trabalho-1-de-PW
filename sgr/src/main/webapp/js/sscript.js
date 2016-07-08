@@ -26,6 +26,10 @@ function modal_vale()
 {
 	window.open('PagamentoCheque.jsp',"Pagamento dinheiro","width=500, height=200, top=100, left=700, scrollbars=no, status=no, toolbar=no, location=no, directories=no, menubar=no, resizable=no, fullscreen=no");
 }
+function modal_cadastro() 
+{
+	window.open('cadastro', "Cadastro Produto",""width=500, height=200, top=100, left=700, scrollbars=no, status=no, toolbar=no, location=no, directories=no, menubar=no, resizable=no, fullscreen=no");
+}
 function help(){
 	alert("Olaaa!!! Sou Mardenha e estou aqui para te ajudar.")
 }

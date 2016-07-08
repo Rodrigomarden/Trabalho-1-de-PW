@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>DI Gestão</title>
+<title>DI Gestï¿½o</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <link href="Css/sb-adm.css" rel="stylesheet">
@@ -25,7 +25,7 @@
 					class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="Principal.jsp">Di-Gestão</a>
+			<a class="navbar-brand" href="Principal.jsp">Di-Gestï¿½o</a>
 		</div>
 		<!-- Top Menu Items -->
 		<ul class="nav navbar-right top-nav">
@@ -49,12 +49,12 @@
 					<li><a href="Mesas.jsp">Ver Todas</a></li>
 				</ul></li>
 			<li class="dropdown"><a href="#" class="dropdown-toggle"
-				data-toggle="dropdown"><i class="fa fa-user"></i> Usuário <b
+				data-toggle="dropdown"><i class="fa fa-user"></i> Usuï¿½rio <b
 					class="caret"></b></a>
 				<ul class="dropdown-menu">
 					<li><a href="#"><i class="fa fa-fw fa-user"></i> Perfil</a></li>
 					<li><a href="#"><i class="fa fa-fw fa-gear"></i>
-							Configurações</a></li>
+							Configuraï¿½ï¿½es</a></li>
 					<li class="divider"></li>
 					<li><a href="Login.jsp"><i class="fa fa-fw fa-power-off"></i>
 							Sair</a></li>
@@ -69,7 +69,7 @@
 						class="fa fa-fw fa-car"></i> Entregas </a></li>
 
 				<li><a href="Gestao.jsp"><i
-						class="fa fa-fw fa-line-chart"></i> Gestão</a></li>
+						class="fa fa-fw fa-line-chart"></i> Gestï¿½o</a></li>
 			</ul>
 		</div>
 		<!-- /.navbar-collapse -->
@@ -95,20 +95,23 @@
                 <br>
                     <thead>
                     <section class="button-busca">
-                        <input type="text" id="pesquisa" placeholder="&#xF002 Buscar produto (nome ou código)" size=25px></input>
+                        <input type="text" id="pesquisa" placeholder="&#xF002 Buscar produto (nome ou cÃ³digo)" size=25px></input>
                     </section>
+                    <div class="cadastrar-posicao-LocProd">
+                        	<button class="cadastrarLoc" onclick="modal_cadastro()" ><img style="width:50px;" src="Mesas/lapis.png">&nbsp;Cadastrar Produto</button>
+                    </div>
                     </thead>
                   <table class="tabela-produtos-mesa">
                     <tr class="atributos-tabela-produtos" style="background-color:#F2F2F2;">
-                        <td style="border-right: 1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;width:50px;"><p>Código</p></td>
+                        <td style="border-right: 1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;width:50px;"><p>CÃ³digo</p></td>
                         <td style="width : 400px;border-right: 1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;"><p>Produto</p></td>
-                        <td style="border-right: 1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;width:90px;"><p>Preço Unit.</p></td>
+                        <td style="border-right: 1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;width:90px;"><p>PreÃ§o Unit.</p></td>
                         <td style="border-right: 1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;width:80px;"><p>Estoque</p></td>
                         <td style="border-right: 1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;width:90px;"><p>Adicionar</p></td>
                     </tr>
                     <tr style="background-color : white;">
                         <td>1</td>
-                        <td>Filé a Parmegiana</td>
+                        <td>Filï¿½ a Parmegiana</td>
                         <td>53,50</td>
                         <td>28</td>
                         <td><img src="Mesas/icAdicionar.png"/></td>
@@ -122,14 +125,14 @@
                     </tr>
                     <tr style="background-color : white;">
                     	<td>3</td>
-                    	<td>Porção de Arroz</td>
+                    	<td>Porï¿½ï¿½o de Arroz</td>
                     	<td>9,90</td>
                     	<td>30</td>
                     	<td><img src="Mesas/icAdicionar.png"/></td>
                     </tr>
                     <tr style="background-color : white;">
                     	<td>4</td>
-                    	<td>Porção de Feijão</td>
+                    	<td>Porï¿½ï¿½o de Feijï¿½o</td>
                     	<td>7,90</td>
                     	<td>90</td>
                     	<td><img src="Mesas/icAdicionar.png"/></td>

@@ -106,19 +106,14 @@ input:-moz-placeholder {
     background-color : #E6E6E6;
 }   
 .button-busca{
-    display : block;
+	position : relative;
     border : 2px solid #E6E6E6;
     float : left;
     width : 200px;
     vertical-align:auto;
+    top : 55px;
     margin : 5px;
     
-}
-.button-busca:hover{
-    transform : scale(1.3);
-    position : relative;
-    left : 20px;
-    border : none;
 }
 .button-busca img{
     float : left;
@@ -238,6 +233,18 @@ input:-moz-placeholder {
     bottom : 70px;
     margin-left : 430px;
     padding : 8px;
+}
+.cadastrar-posicao-LocProd{
+	display : inline;
+    border-radius : 5px;
+    float : left;
+    position : relative;
+    margin-left : 490px;
+    padding : 8px;
+}
+.cadastrarLoc{
+	border:none;
+    background-color:#E6E6E6;
 }
 .sairLoc{
 	border:none;
