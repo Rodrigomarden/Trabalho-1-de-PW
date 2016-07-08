@@ -101,11 +101,21 @@ input:-moz-placeholder {
     border : 2px solid #E6E6E6;
     border-radius : 5px;
     clear : left;
-    width : 722px;
+    width : 830px;
     margin-left : 15px;
     background-color : #E6E6E6;
 }   
 .button-busca{
+	position : relative;
+    border : 2px solid #E6E6E6;
+    float : left;
+    width : 200px;
+    top : 5px;
+    vertical-align:auto;
+    margin : 5px;
+    
+}
+.button-buscaa{
 	position : relative;
     border : 2px solid #E6E6E6;
     float : left;
@@ -143,9 +153,11 @@ input:-moz-placeholder {
 .tabela-produtos-mesa{
     float : left;
     border : 1px solid #E6E6E6;
+    position : relative;
     border-radius : 5px;
     margin : 5px;
     display : block;
+    bottom : 55px;
 }
 .valor-total{
     border-top : 1px solid #E6E6E6;
@@ -167,7 +179,7 @@ input:-moz-placeholder {
     float : left;
     margin : 5px;
     position : relative;
-    bottom : 10px;
+    bottom : 70px;
 }
 .apagar{
     float : right;
@@ -231,7 +243,7 @@ input:-moz-placeholder {
     float : left;
     position : relative;
     bottom : 70px;
-    margin-left : 430px;
+    margin-left : 300px;
     padding : 8px;
 }
 .cadastrar-posicao-LocProd{
@@ -239,6 +251,7 @@ input:-moz-placeholder {
     border-radius : 5px;
     float : left;
     position : relative;
+    bottom : 55px;
     margin-left : 490px;
     padding : 8px;
 }
@@ -278,7 +291,7 @@ input:-moz-placeholder {
 
 .mesaJanela {
 	position: fixed;
-	left: 390px;
+	left: 350px;
 	top: 42px;
 }
 

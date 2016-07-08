@@ -147,7 +147,7 @@
 	            <section class="produtos-mesa">
 	                <tr>
 	                    <thead>
-	                    <section class="button-busca">
+	                    <section class="button-busca" style="top : 0px">
 	                    <a href="LocalizarProduto.jsp">
 	                        <img src="Mesas/locPedido.png"/>
 	                        <br>

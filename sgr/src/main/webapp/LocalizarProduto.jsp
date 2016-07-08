@@ -1,15 +1,19 @@
 <!DOCTYPE html>
+<%@page import="sgr.Produto"%>
+<%@page import="java.util.List"%>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>DI Gestï¿½o</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link href="Css/sb-adm.css" rel="stylesheet">
-<link href="Css/morris.css">
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script
-	src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<title>DI Gestão</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link href="Css/sb-adm.css" rel="stylesheet">
+	<link href="Css/morris.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script
+		src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js">
+	</script>
+	<script src="js/sscript.js"></script>
 </head>
 <body>
 	<link
@@ -25,7 +29,7 @@
 					class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="Principal.jsp">Di-Gestï¿½o</a>
+			<a class="navbar-brand" href="Principal.jsp">Di-Gestão</a>
 		</div>
 		<!-- Top Menu Items -->
 		<ul class="nav navbar-right top-nav">
@@ -49,12 +53,12 @@
 					<li><a href="Mesas.jsp">Ver Todas</a></li>
 				</ul></li>
 			<li class="dropdown"><a href="#" class="dropdown-toggle"
-				data-toggle="dropdown"><i class="fa fa-user"></i> Usuï¿½rio <b
+				data-toggle="dropdown"><i class="fa fa-user"></i> Usuário <b
 					class="caret"></b></a>
 				<ul class="dropdown-menu">
 					<li><a href="#"><i class="fa fa-fw fa-user"></i> Perfil</a></li>
 					<li><a href="#"><i class="fa fa-fw fa-gear"></i>
-							Configuraï¿½ï¿½es</a></li>
+							Configuações</a></li>
 					<li class="divider"></li>
 					<li><a href="Login.jsp"><i class="fa fa-fw fa-power-off"></i>
 							Sair</a></li>
@@ -69,7 +73,7 @@
 						class="fa fa-fw fa-car"></i> Entregas </a></li>
 
 				<li><a href="Gestao.jsp"><i
-						class="fa fa-fw fa-line-chart"></i> Gestï¿½o</a></li>
+						class="fa fa-fw fa-line-chart"></i> Gestão</a></li>
 			</ul>
 		</div>
 		<!-- /.navbar-collapse -->
@@ -95,7 +99,7 @@
                 <br>
                     <thead>
                     <section class="button-busca">
-                        <input type="text" id="pesquisa" placeholder="&#xF002 Buscar produto (nome ou cÃ³digo)" size=25px></input>
+                        <input type="text" id="pesquisa" placeholder="&#xF002 Buscar produto (nome ou código)" size=25px></input>
                     </section>
                     <div class="cadastrar-posicao-LocProd">
                         	<button class="cadastrarLoc" onclick="modal_cadastro()" ><img style="width:50px;" src="Mesas/lapis.png">&nbsp;Cadastrar Produto</button>
@@ -103,137 +107,52 @@
                     </thead>
                   <table class="tabela-produtos-mesa">
                     <tr class="atributos-tabela-produtos" style="background-color:#F2F2F2;">
-                        <td style="border-right: 1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;width:50px;"><p>CÃ³digo</p></td>
+                        <td style="border-right: 1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;width:50px;"><p>Código</p></td>
                         <td style="width : 400px;border-right: 1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;"><p>Produto</p></td>
-                        <td style="border-right: 1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;width:90px;"><p>PreÃ§o Unit.</p></td>
+                        <td style="border-right: 1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;width:90px;"><p>Preço Unit.</p></td>
                         <td style="border-right: 1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;width:80px;"><p>Estoque</p></td>
                         <td style="border-right: 1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;width:90px;"><p>Adicionar</p></td>
+                        <td style="border-right: 1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;width:65px;"><p>Alterar</p></td>
+                        <td style="border-right: 1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;width:65px;"><p>Excluir</p></td>
                     </tr>
+                    <%
+                    	Produto px = new Produto();
+                    	List<Produto> produtos = (List<Produto>) request.getAttribute("produtos");
+     					if (produtos != null && !produtos.isEmpty()) {
+     						for (Produto p : produtos) {
+                    %>
                     <tr style="background-color : white;">
-                        <td>1</td>
-                        <td>Filï¿½ a Parmegiana</td>
-                        <td>53,50</td>
-                        <td>28</td>
+                        <td><%=p.getCodigo()%></td>
+                        <td><%=p.getProduto() %></td>
+                        <td><%=p.getPrecounit() %></td>
+                        <td><%=p.getEstoque() %></td>
                         <td><img src="Mesas/icAdicionar.png"/></td>
+                        <td><button onclick="modal_alterarProduto()" <%px.setCodigo(p.getCodigo());%><%px.setProduto(p.getProduto());%>
+                        <%px.setPrecounit(p.getPrecounit());%><%px.setEstoque(p.getEstoque());%>><img src="Mesas/icAlterarProduto.png"/></button></td>
+                        <td><a href="produto?operacao=excluir&codigo=<%=p.getCodigo()%>&produto=<%=p.getProduto()%>"><img src="Mesas/icExcluirProduto.png"/></a></td>
                     </tr>
-                    <tr style="background-color : white;">
-                    	<td>2</td>
-                    	<td>Fritas com Cheddar</td>
-                    	<td>53,50</td>
-                    	<td>100</td>
-                    	<td><img src="Mesas/icAdicionar.png"/></td>
-                    </tr>
-                    <tr style="background-color : white;">
-                    	<td>3</td>
-                    	<td>Porï¿½ï¿½o de Arroz</td>
-                    	<td>9,90</td>
-                    	<td>30</td>
-                    	<td><img src="Mesas/icAdicionar.png"/></td>
-                    </tr>
-                    <tr style="background-color : white;">
-                    	<td>4</td>
-                    	<td>Porï¿½ï¿½o de Feijï¿½o</td>
-                    	<td>7,90</td>
-                    	<td>90</td>
-                    	<td><img src="Mesas/icAdicionar.png"/></td>
-                    </tr>
-                    <tr style="background-color : white;">
-                    	<td>5</td>
-                    	<td>Picanha ao Alho</td>
-                    	<td>69,90</td>
-                    	<td>72</td>
-                    	<td><img src="Mesas/icAdicionar.png"/></td>
-                    </tr>
-                    <tr style="background-color : white;">
-                    	<td>6</td>
-                    	<td>Espaguete com molho de Tomate</td>
-                    	<td>23,90</td>
-                    	<td>42</td>
-                    	<td><img src="Mesas/icAdicionar.png"/></td>
-                    </tr>
-                    <tr style="background-color : white;">
-                    	<td>7</td>
-                    	<td>Coca-cola lata 350ml</td>
-                    	<td>3,50</td>
-                    	<td>67</td>
-                    	<td><img src="Mesas/icAdicionar.png"/></td>
-                    </tr>
-                    <tr style="background-color : white;">
-                    	<td>8</td>
-                    	<td>Coca-cola 600mL</td>
-                    	<td>4,50</td>
-                    	<td>40</td>
-                    	<td><img src="Mesas/icAdicionar.png"/></td>
-                    </tr>
-                    <tr style="background-color : white;">
-                    	<td>9</td>
-                    	<td>Coca-cola 1L</td>
-                    	<td>6,00</td>
-                    	<td>52</td>
-                    	<td><img src="Mesas/icAdicionar.png"/></td>
-                    </tr>
-                    <tr style="background-color : white;">
-                    	<td><br></td>
-                    	<td><br></td>
-                    	<td><br></td>
-                    	<td><br></td>
-                    	<td><br></td>
-                    </tr>
-                    <tr style="background-color : white;">
-                    	<td><br></td>
-                    	<td><br></td>
-                    	<td><br></td>
-                    	<td><br></td>
-                    	<td><br></td>
-                    </tr>
-                    <tr style="background-color : white;">
-                    	<td><br></td>
-                    	<td><br></td>
-                    	<td><br></td>
-                    	<td><br></td>
-                    	<td><br></td>
-                    </tr>
-                    <tr style="background-color : white;">
-                    	<td><br></td>
-                    	<td><br></td>
-                    	<td><br></td>
-                    	<td><br></td>
-                    	<td><br></td>
-                    </tr>
-                    <tr style="background-color : white;">
-                    	<td><br></td>
-                    	<td><br></td>
-                    	<td><br></td>
-                    	<td><br></td>
-                    	<td><br></td>
-                    </tr>
-                    <tr style="background-color : white;">
-                    	<td><br></td>
-                    	<td><br></td>
-                    	<td><br></td>
-                    	<td><br></td>
-                    	<td><br></td>
-                    </tr>
-                    <tr style="background-color:#F2F2F2;">
-                        <td><br></td>
-                    	<td><br></td>
-                    	<td><br></td>
-                    	<td><br></td>
-                    	<td><br></td>
-                    </tr>
+                    <%
+                    		}
+                    	}
+     					request.setAttribute("px", px);
+                   	%>
                     <tr style="background-color:#F2F2F2;">
                         <td><br></td>
                     	<td><b>Atendente: </b><select style="width:200px;background-color : white;">
-                                <option value="rodrigo">Rodriprego Marden</option>
+                                <option value="rodrigo">Rodrigo Marden</option>
                                 <option value="matheus">Matheus Assis</option>
                                 <option value="tony">Tony William</option>
                             </select></td>
                     	<td><br></td>
                     	<td><br></td>
                     	<td><br></td>
+                    	<td><br></td>
+                    	<td><br></td>
                     </tr> 
                     <tr style="background-color:#F2F2F2;">
                         <td><br></td>
+                    	<td><br></td>
+                    	<td><br></td>
                     	<td><br></td>
                     	<td><br></td>
                     	<td><br></td>
