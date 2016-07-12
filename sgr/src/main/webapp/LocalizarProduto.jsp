@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <%@page import="sgr.Produto"%>
+<%@page import="sgr.ProdutoDao"%>
 <%@page import="java.util.List"%>
 <html lang="en">
 <head>
@@ -99,8 +100,9 @@
                 <br>
                     <thead>
                     <section class="button-busca">
-                        <input type="text" id="pesquisa" placeholder="&#xF002 Buscar produto (nome ou código)" size=25px></input>
+                        <input type="text" name="pesquisa" placeholder="&#xF002 Buscar produto (nome ou código)" size=25px></input>
                     </section>
+                    <button class="button-buscax" name="operacao" value="buscar">Buscar</button>
                     <div class="cadastrar-posicao-LocProd">
                         	<button class="cadastrarLoc" onclick="modal_cadastro()" ><img style="width:50px;" src="Mesas/lapis.png">&nbsp;Cadastrar Produto</button>
                     </div>
@@ -116,10 +118,12 @@
                         <td style="border-right: 1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;width:65px;"><p>Excluir</p></td>
                     </tr>
                     <%
-                    	Produto px = new Produto();
                     	List<Produto> produtos = (List<Produto>) request.getAttribute("produtos");
      					if (produtos != null && !produtos.isEmpty()) {
-     						for (Produto p : produtos) {
+     						//int codbusca = (int)request.getAttribute("codbusca");
+     						//System.out.println(codbusca);
+     						//if((int)request.getAttribute("codbusca")==0) {
+     							for (Produto p : produtos) {
                     %>
                     <tr style="background-color : white;">
                         <td><%=p.getCodigo()%></td>
@@ -127,14 +131,12 @@
                         <td><%=p.getPrecounit() %></td>
                         <td><%=p.getEstoque() %></td>
                         <td><img src="Mesas/icAdicionar.png"/></td>
-                        <td><button onclick="modal_alterarProduto()" <%px.setCodigo(p.getCodigo());%><%px.setProduto(p.getProduto());%>
-                        <%px.setPrecounit(p.getPrecounit());%><%px.setEstoque(p.getEstoque());%>><img src="Mesas/icAlterarProduto.png"/></button></td>
+                        <td><a onclick="modal_alterarProduto()" href="produto?operacao=alterar&codigo=<%=p.getCodigo()%>&produto=<%=p.getProduto()%>&precounit=<%=p.getPrecounit()%>&estoque=<%=p.getEstoque()%>"><img src="Mesas/icAlterarProduto.png"/></a></td>
                         <td><a href="produto?operacao=excluir&codigo=<%=p.getCodigo()%>&produto=<%=p.getProduto()%>"><img src="Mesas/icExcluirProduto.png"/></a></td>
                     </tr>
-                    <%
-                    		}
+                    <%			}
+                    		//}
                     	}
-     					request.setAttribute("px", px);
                    	%>
                     <tr style="background-color:#F2F2F2;">
                         <td><br></td>

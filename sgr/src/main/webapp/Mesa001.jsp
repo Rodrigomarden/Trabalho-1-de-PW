@@ -148,7 +148,7 @@
 	                <tr>
 	                    <thead>
 	                    <section class="button-busca" style="top : 0px">
-	                    <a href="LocalizarProduto.jsp">
+	                    <a href="produto">
 	                        <img src="Mesas/locPedido.png"/>
 	                        <br>
 	                        <p> Localizar um Produto</p>

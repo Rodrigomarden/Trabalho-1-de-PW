@@ -30,23 +30,25 @@ public class LocalizarProdutoController extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		try {
-			Produto px = new Produto();
 			String msg;
 			String op = valor(req, "operacao", "");
 			int codigo = toInt(req, "codigo", "0");
 			String produto = valor(req, "produto", "");
 			double precounit = toDouble(req, "precounit", "0");
 			int estoque = toInt(req, "estoque", "0");
-			
+			int codbusca = toInt(req, "pesquisa", "0");
 			if (op.equals("excluir")) {
 				ProdutoDao.excluir(codigo, produto);
 				resp.sendRedirect("produto");
-			} else if (op.equals("")) {
+			} else if(op.equals("alterar")) {
+				ProdutoDao.alterar_cadastro(codigo, produto, precounit, estoque);
+				resp.sendRedirect("produto");
+			}  else if (op.equals("")) {
 				msg = "";
 			} else {
 				throw new IllegalArgumentException("Operação \"" + op + "\" não suportada.");
 			}
-			ProdutoDao.por(px);
+			req.setAttribute("codbusca", codbusca);
 			List<Produto> produtos = ProdutoDao.listar();
 			req.setAttribute("produtos", produtos);
 			

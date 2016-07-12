@@ -115,13 +115,12 @@ input:-moz-placeholder {
     margin : 5px;
     
 }
-.button-buscaa{
+.button-buscax{
 	position : relative;
-    border : 2px solid #E6E6E6;
     float : left;
-    width : 200px;
     vertical-align:auto;
-    top : 55px;
+    top : 7px;
+    left : 10px;
     margin : 5px;
     
 }
@@ -252,7 +251,7 @@ input:-moz-placeholder {
     float : left;
     position : relative;
     bottom : 55px;
-    margin-left : 490px;
+    margin-left : 625px;
     padding : 8px;
 }
 .cadastrarLoc{

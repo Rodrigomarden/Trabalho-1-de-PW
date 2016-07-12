@@ -7,7 +7,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.ResultSet;
 
-public class ProdutoDao {
+public class AlterarProdutoDao {
 	
 	private static final String URL = "jdbc:derby:bd;create=true";
 
@@ -15,10 +15,26 @@ public class ProdutoDao {
 		// Abrir uma conexão com o banco de dados.
 		Connection conn = DriverManager.getConnection(URL);
 		// Executar instrução SQL.
-		String sql = "delete from produtos where codigo = ? and produto = ? ";
+		String sql = "delete from alterar_produtos where codigo = ?";
 		PreparedStatement pstmt = (PreparedStatement) conn.prepareStatement(sql);
 		pstmt.setInt(1, codigo);
-		pstmt.setString(2, produto);
+		pstmt.executeUpdate();
+		// Fechar sentença.
+		pstmt.close();
+		// Fechar conexão.
+		conn.close();
+	}
+	
+	public static void alterar(int codigo, String produto, double precounit, int estoque) throws SQLException {
+		// Abrir uma conexão com o banco de dados.
+		Connection conn = DriverManager.getConnection(URL);
+		// Executar instrução SQL.
+		String sql = "update produtos set produto = ?, precounit = ?, estoque = ?  where codigo = ?";
+		PreparedStatement pstmt = conn.prepareStatement(sql);
+		pstmt.setString(1, produto);
+		pstmt.setDouble(2, precounit);
+		pstmt.setInt(3, estoque);
+		pstmt.setInt(4, codigo);
 		pstmt.executeUpdate();
 		// Fechar sentença.
 		pstmt.close();
@@ -30,19 +46,19 @@ public class ProdutoDao {
 		// Abrir uma conexão com o banco de dados.
 		Connection conn = DriverManager.getConnection(URL);
 		// Executar instrução SQL.
-		String sql = "select codigo, produto, precounit, estoque from produtos";
+		String sql = "select codigo, produto, precounit, estoque from alterar_produtos";
 		PreparedStatement pstmt = conn.prepareStatement(sql);
 		// Represneta o resultado da execução.
 		ResultSet rs = pstmt.executeQuery();
 		
-		List<Produto> produtos = new ArrayList<>();
+		List<Produto> alterarprodutos = new ArrayList<>();
 		while (rs.next()) {
 			int codigo = rs.getInt("codigo");
 			String produto = rs.getString("produto");
 			double precounit = rs.getDouble("precounit");
 			int estoque = rs.getInt("estoque");
 			Produto produt = new Produto(codigo, produto, precounit, estoque);
-			produtos.add(produt);
+			alterarprodutos.add(produt);
 		}
 	
 		// Fechar resultado.
@@ -52,22 +68,6 @@ public class ProdutoDao {
 		// Fechar conexão.
 		conn.close();
 		
-		return produtos;
-	}
-	public static void alterar_cadastro(int codigo, String produto, double precounit, int estoque) throws SQLException {
-		// Abrir uma conexão com o banco de dados.
-		Connection conn = DriverManager.getConnection(URL);
-		// Executar instrução SQL.
-		String sql = "insert into alterar_produtos (codigo, produto, precounit, estoque) values (?, ?, ?, ?)";
-		PreparedStatement pstmt = (PreparedStatement) conn.prepareStatement(sql);
-		pstmt.setInt(1, codigo);
-		pstmt.setString(2, produto);
-		pstmt.setDouble(3, precounit);
-		pstmt.setInt(4, estoque);
-		pstmt.executeUpdate();
-		// Fechar sentença.
-		pstmt.close();
-		// Fechar conexão.
-		conn.close();
+		return alterarprodutos;
 	}
 }

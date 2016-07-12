@@ -1,29 +1,37 @@
 <%@page import="sgr.Produto"%>
+<%@page import="sgr.AlterarProdutoDao"%>
+<%@page import="java.util.List"%>
 <html>
 <head>
 	<title>Alterar</title>
 </head>
 <body>
 	<form>
-	<%Produto pz= (Produto) request.getAttribute("px"); %>
 		<table>
+			<%List<Produto> alterarprodutos = (List<Produto>) request.getAttribute("alterarprodutos");
+				if (alterarprodutos != null && !alterarprodutos.isEmpty()) {
+					for (Produto px : alterarprodutos) {
+			%>
 	      <tr>
-	        <td>Codigo</td>
-	        <td><input type="text" value="<%pz.getCodigo();%>" name="codigo"></input></td>
+	        <td>Codigo:</td>
+	        <td><input name="codigo" type="text" value="<%=px.getCodigo()%>"></input></td>
 	      </tr>
 	      <tr>
 	        <td>Produto:</td>
-	        <td><input type="text" value="<%pz.getProduto();%>" name="produto"></td>
+	        <td><input name="produto" type="text" value="<%=px.getProduto()%>"></td>
 	      </tr>
 	      <tr>
 	        <td>Preço Unitario:</td>
-	        <td><input type="text" value="<%pz.getPrecounit();%>" name="precounit"></td>
+	        <td><input name="precounit" type="text" value="<%=px.getPrecounit()%>"></td>
 	      </tr>
 	      <tr>
 	        <td>Estoque:</td>
-	        <td><input type="text" value="<%pz.getEstoque();%>" name="estoque"></td>
+	        <td><input name="estoque" type="text" value="<%=px.getEstoque()%>"></td>
 	      </tr>
 	    </table>
+	    	<%		}
+				}
+			%>
 	    <button name="operacao" value="alterar">Alterar</button>
     </form>
     <b>${msg}</b>

@@ -30,7 +30,6 @@ public class AlterarProdutoController extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		try {
-			Produto px = new Produto();
 			String msg;
 			String op = valor(req, "operacao", "");
 			int codigo = toInt(req, "codigo", "0");
@@ -39,16 +38,16 @@ public class AlterarProdutoController extends HttpServlet {
 			int estoque = toInt(req, "estoque", "0");
 			
 			if (op.equals("alterar")) {
-				ProdutoDao.alterar(codigo, produto, precounit, estoque);
+				AlterarProdutoDao.alterar(codigo, produto, precounit, estoque);
+				AlterarProdutoDao.excluir(codigo, produto);
 				resp.sendRedirect("alterar");
 			} else if (op.equals("")) {
 				msg = "";
 			} else {
 				throw new IllegalArgumentException("Operação \"" + op + "\" não suportada.");
 			}
-			ProdutoDao.por(px);
-			List<Produto> produtos = ProdutoDao.listar();
-			req.setAttribute("produtos", produtos);
+			List<Produto> alterarprodutos = AlterarProdutoDao.listar();
+			req.setAttribute("alterarprodutos", alterarprodutos);
 			
 			req.getRequestDispatcher("AlterarProdutoView.jsp").forward(req, resp);
 		} catch (Exception e) {
