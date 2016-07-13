@@ -42,13 +42,16 @@ public class AlterarProdutoController extends HttpServlet {
 				AlterarProdutoDao.excluir(codigo, produto);
 				resp.sendRedirect("alterar");
 			} else if (op.equals("")) {
+				req.setAttribute("codigo", codigo);
+				req.setAttribute("produto", produto);
+				req.setAttribute("precounit", precounit);
+				req.setAttribute("estoque", estoque);
 				msg = "";
 			} else {
 				throw new IllegalArgumentException("Operação \"" + op + "\" não suportada.");
 			}
 			List<Produto> alterarprodutos = AlterarProdutoDao.listar();
 			req.setAttribute("alterarprodutos", alterarprodutos);
-			
 			req.getRequestDispatcher("AlterarProdutoView.jsp").forward(req, resp);
 		} catch (Exception e) {
 			e.printStackTrace(resp.getWriter());

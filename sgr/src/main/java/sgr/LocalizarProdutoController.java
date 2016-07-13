@@ -37,6 +37,7 @@ public class LocalizarProdutoController extends HttpServlet {
 			double precounit = toDouble(req, "precounit", "0");
 			int estoque = toInt(req, "estoque", "0");
 			int codbusca = toInt(req, "pesquisa", "0");
+			
 			if (op.equals("excluir")) {
 				ProdutoDao.excluir(codigo, produto);
 				resp.sendRedirect("produto");

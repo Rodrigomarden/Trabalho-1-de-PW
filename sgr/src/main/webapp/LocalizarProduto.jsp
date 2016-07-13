@@ -120,8 +120,8 @@
                     <%
                     	List<Produto> produtos = (List<Produto>) request.getAttribute("produtos");
      					if (produtos != null && !produtos.isEmpty()) {
-     						//int codbusca = (int)request.getAttribute("codbusca");
-     						//System.out.println(codbusca);
+     						System.out.println(request.getAttribute("codbusca"));
+     						Integer codbusca = (Integer)request.getAttribute("codbusca");
      						//if((int)request.getAttribute("codbusca")==0) {
      							for (Produto p : produtos) {
                     %>
@@ -131,7 +131,7 @@
                         <td><%=p.getPrecounit() %></td>
                         <td><%=p.getEstoque() %></td>
                         <td><img src="Mesas/icAdicionar.png"/></td>
-                        <td><a onclick="modal_alterarProduto()" href="produto?operacao=alterar&codigo=<%=p.getCodigo()%>&produto=<%=p.getProduto()%>&precounit=<%=p.getPrecounit()%>&estoque=<%=p.getEstoque()%>"><img src="Mesas/icAlterarProduto.png"/></a></td>
+                        <td><a onclick="modal_alterarProduto('<%=p.getCodigo()%>', '<%=p.getProduto()%>', '<%=p.getPrecounit()%>', '<%=p.getEstoque()%>')" href="#"><img src="Mesas/icAlterarProduto.png"/></a></td>
                         <td><a href="produto?operacao=excluir&codigo=<%=p.getCodigo()%>&produto=<%=p.getProduto()%>"><img src="Mesas/icExcluirProduto.png"/></a></td>
                     </tr>
                     <%			}

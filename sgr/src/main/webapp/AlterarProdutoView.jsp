@@ -3,6 +3,9 @@
 <%@page import="java.util.List"%>
 <html>
 <head>
+	<script language="JavaScript" type="text/javascript">
+	setTimeout("location.href = 'alterar'",1000); // milliseconds, so 10 seconds = 10000ms
+	</script>
 	<title>Alterar</title>
 </head>
 <body>
