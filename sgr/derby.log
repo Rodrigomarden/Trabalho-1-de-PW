@@ -1,12 +1,12 @@
 ----------------------------------------------------------------
-Thu Jul 14 01:17:56 BRT 2016:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0155-e7a0-1749-00000236bfa8 
+Thu Jul 14 15:25:24 BRT 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0155-eaa7-f8de-000006f71f20 
 on database directory C:\Users\rodri\git\Trabalho-1-de-PW\sgr\bd with class loader WebappClassLoader
   context: /sgr
   delegate: false
   repositories:
 ----------> Parent Classloader:
-ClassRealm[plugin>org.apache.tomcat.maven:tomcat7-maven-plugin:2.2, parent: sun.misc.Launcher$AppClassLoader@18b4aac2]
+ClassRealm[plugin>org.apache.tomcat.maven:tomcat7-maven-plugin:2.2, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
  
 Loaded from file:/C:/Users/rodri/.m2/repository/org/apache/derby/derby/10.12.1.1/derby-10.12.1.1.jar
 java.vendor=Oracle Corporation

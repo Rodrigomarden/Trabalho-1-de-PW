@@ -13,17 +13,25 @@ public class CadastroProdutoDao {
 		// Abrir uma conexão com o banco de dados.
 		Connection conn = DriverManager.getConnection(URL);
 		// Executar instrução SQL.
-		String sql = "insert into produtos (codigo, produto, precounit, estoque) values (?, ?, ?, ?)";
-		PreparedStatement pstmt = (PreparedStatement) conn.prepareStatement(sql);
-		pstmt.setInt(1, codigo);
-		pstmt.setString(2, produto);
-		pstmt.setDouble(3, precounit);
-		pstmt.setInt(4, estoque);
-		pstmt.executeUpdate();
-		// Fechar sentença.
-		pstmt.close();
-		// Fechar conexão.
-		conn.close();
+		conn.setAutoCommit(false);
+		try {
+			String sql = "insert into produtos (codigo, produto, precounit, estoque) values (?, ?, ?, ?)";
+			PreparedStatement pstmt = (PreparedStatement) conn.prepareStatement(sql);
+			pstmt.setInt(1, codigo);
+			pstmt.setString(2, produto);
+			pstmt.setDouble(3, precounit);
+			pstmt.setInt(4, estoque);
+			pstmt.executeUpdate();
+			// Fechar sentença.
+			pstmt.close();
+			conn.commit();
+		} catch(Throwable e) {
+			conn.rollback();
+			throw e;
+		} finally {
+			// Fechar conexão.
+			conn.close();
+		}
 	}
 	
 	public static boolean consultar(int codigo) throws SQLException {
