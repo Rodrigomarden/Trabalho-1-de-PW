@@ -25,4 +25,29 @@ public class CadastroProdutoDao {
 		// Fechar conexão.
 		conn.close();
 	}
+	
+	public static boolean consultar(int codigo) throws SQLException {
+		if (codigo == 0) {
+			return true;
+		}
+		// Abrir uma conexão com o banco de dados.
+		Connection conn = DriverManager.getConnection(URL);
+		// Executar instrução SQL.
+		String sql = "select codigo from produtos where codigo = ?";
+		PreparedStatement pstmt = (PreparedStatement) conn.prepareStatement(sql);
+		pstmt.setInt(1, codigo);
+		ResultSet rs = pstmt.executeQuery();
+		String cod = "";
+		while (rs.next()) {
+			 cod = Integer.toString(rs.getInt("codigo"));
+		}
+		if (cod == null || cod == "" ) {
+			pstmt.close();
+			conn.close();
+			return false;
+		}
+		pstmt.close();
+		conn.close();
+		return true;
+	}
 }

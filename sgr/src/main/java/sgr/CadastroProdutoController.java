@@ -12,7 +12,7 @@ public class CadastroProdutoController extends HttpServlet {
 
 	private String valor(HttpServletRequest req, String param, String padrao) {
 		String result = req.getParameter(param);
-		if (result == null) {
+		if (result == null || result == "") {
 			result = padrao;
 		}
 		return result;
@@ -37,9 +37,12 @@ public class CadastroProdutoController extends HttpServlet {
 			int estoque = toInt(req, "estoque", "0");
 			
 			if (op.equals("cadastrar")) {
-				CadastroProdutoDao.cadastrar(codigo, produto, precounit, estoque);
-				msg = "Cadastro realizado com sucesso.";
-				resp.sendRedirect("cadastro");
+				if(CadastroProdutoDao.consultar(codigo)) {
+					msg = "Codigo já utilizado ou invalido.";
+				} else {
+					CadastroProdutoDao.cadastrar(codigo, produto, precounit, estoque);
+					msg = "Cadastro realizado com sucesso.";
+				}
 			} else if (op.equals("")) {
 				msg = "";
 			} else {

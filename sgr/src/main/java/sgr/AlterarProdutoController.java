@@ -13,7 +13,7 @@ public class AlterarProdutoController extends HttpServlet {
 
 	private String valor(HttpServletRequest req, String param, String padrao) {
 		String result = req.getParameter(param);
-		if (result == null) {
+		if (result == null || result == "") {
 			result = padrao;
 		}
 		return result;
@@ -36,11 +36,10 @@ public class AlterarProdutoController extends HttpServlet {
 			String produto = valor(req, "produto", "");
 			double precounit = toDouble(req, "precounit", "0");
 			int estoque = toInt(req, "estoque", "0");
-			
+			Produto alterarproduto = new Produto(codigo, produto, precounit, estoque);
 			if (op.equals("alterar")) {
 				AlterarProdutoDao.alterar(codigo, produto, precounit, estoque);
-				AlterarProdutoDao.excluir(codigo, produto);
-				resp.sendRedirect("alterar");
+				msg="Produto alterado com sucesso!";
 			} else if (op.equals("")) {
 				req.setAttribute("codigo", codigo);
 				req.setAttribute("produto", produto);
@@ -50,8 +49,8 @@ public class AlterarProdutoController extends HttpServlet {
 			} else {
 				throw new IllegalArgumentException("Operação \"" + op + "\" não suportada.");
 			}
-			List<Produto> alterarprodutos = AlterarProdutoDao.listar();
-			req.setAttribute("alterarprodutos", alterarprodutos);
+			req.setAttribute("msg", msg);
+			req.setAttribute("alterarproduto", alterarproduto);
 			req.getRequestDispatcher("AlterarProdutoView.jsp").forward(req, resp);
 		} catch (Exception e) {
 			e.printStackTrace(resp.getWriter());

@@ -1,5 +1,7 @@
 package sgr;
 import java.io.IOException;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -13,7 +15,7 @@ public class LocalizarProdutoController extends HttpServlet {
 
 	private String valor(HttpServletRequest req, String param, String padrao) {
 		String result = req.getParameter(param);
-		if (result == null) {
+		if (result == null || result == "") {
 			result = padrao;
 		}
 		return result;
@@ -36,21 +38,28 @@ public class LocalizarProdutoController extends HttpServlet {
 			String produto = valor(req, "produto", "");
 			double precounit = toDouble(req, "precounit", "0");
 			int estoque = toInt(req, "estoque", "0");
-			int codbusca = toInt(req, "pesquisa", "0");
-			
+			String codbusca = valor(req, "pesquisa", "0");
 			if (op.equals("excluir")) {
 				ProdutoDao.excluir(codigo, produto);
 				resp.sendRedirect("produto");
 			} else if(op.equals("alterar")) {
-				ProdutoDao.alterar_cadastro(codigo, produto, precounit, estoque);
 				resp.sendRedirect("produto");
 			}  else if (op.equals("")) {
 				msg = "";
 			} else {
 				throw new IllegalArgumentException("Operação \"" + op + "\" não suportada.");
 			}
+			
 			req.setAttribute("codbusca", codbusca);
 			List<Produto> produtos = ProdutoDao.listar();
+			Collections.sort(produtos, new Comparator() {
+				public int compare(Object o1, Object o2) {
+					Produto p1 = (Produto) o1;
+					Produto p2 = (Produto) o2;
+					
+					return p1.getCodigo() < p2.getCodigo() ? -1 : (p1.getCodigo() > p2.getCodigo() ? +1 : 0);
+				}
+			});
 			req.setAttribute("produtos", produtos);
 			
 			req.getRequestDispatcher("LocalizarProduto.jsp").forward(req, resp);

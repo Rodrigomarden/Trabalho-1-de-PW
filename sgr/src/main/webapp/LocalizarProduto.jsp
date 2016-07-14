@@ -85,11 +85,12 @@
 	<link
 		href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
 		rel="stylesheet">
-	<link href="Css/estiloMesas.css" rel="stylesheet">
+	<link href="Css/estiloProduto.css" rel="stylesheet">
 
 <div class="container-fluid">
 
 <div class="mesaJanela">
+	<form>
 	<div class="container-geral">
 	<div class="container-mesa">
             <section class="produtos-mesa">
@@ -102,7 +103,9 @@
                     <section class="button-busca">
                         <input type="text" name="pesquisa" placeholder="&#xF002 Buscar produto (nome ou código)" size=25px></input>
                     </section>
-                    <button class="button-buscax" name="operacao" value="buscar">Buscar</button>
+                    <div class="button-buscax">
+                    	<button>Buscar</button>
+                    </div>
                     <div class="cadastrar-posicao-LocProd">
                         	<button class="cadastrarLoc" onclick="modal_cadastro()" ><img style="width:50px;" src="Mesas/lapis.png">&nbsp;Cadastrar Produto</button>
                     </div>
@@ -119,11 +122,23 @@
                     </tr>
                     <%
                     	List<Produto> produtos = (List<Produto>) request.getAttribute("produtos");
+                    	boolean x = true;
      					if (produtos != null && !produtos.isEmpty()) {
-     						System.out.println(request.getAttribute("codbusca"));
-     						Integer codbusca = (Integer)request.getAttribute("codbusca");
-     						//if((int)request.getAttribute("codbusca")==0) {
-     							for (Produto p : produtos) {
+     						String codbusca = (String)request.getAttribute("codbusca");
+     						//Verifica se é código ou produto
+     						char[] c = codbusca.toCharArray();
+     						boolean d = true;
+     						for (int i = 0; i < c.length; i++){
+     							if( !Character.isDigit( c[ i ] ) ) {
+     								d = false;
+     								break;
+     							}
+     						}
+     						if(d) {
+     							//Lista todos os produtos
+	     						if(Integer.parseInt(codbusca)==0) {
+	     							x = false;
+	     							for (Produto p : produtos) {
                     %>
                     <tr style="background-color : white;">
                         <td><%=p.getCodigo()%></td>
@@ -131,12 +146,75 @@
                         <td><%=p.getPrecounit() %></td>
                         <td><%=p.getEstoque() %></td>
                         <td><img src="Mesas/icAdicionar.png"/></td>
-                        <td><a onclick="modal_alterarProduto('<%=p.getCodigo()%>', '<%=p.getProduto()%>', '<%=p.getPrecounit()%>', '<%=p.getEstoque()%>')" href="#"><img src="Mesas/icAlterarProduto.png"/></a></td>
+                        <td><a href="produto?operacao=alterar" onclick="modal_alterarProduto('<%=p.getCodigo()%>', '<%=p.getProduto()%>', '<%=p.getPrecounit()%>', '<%=p.getEstoque()%>')"><img src="Mesas/icAlterarProduto.png"/></a></td>
                         <td><a href="produto?operacao=excluir&codigo=<%=p.getCodigo()%>&produto=<%=p.getProduto()%>"><img src="Mesas/icExcluirProduto.png"/></a></td>
                     </tr>
-                    <%			}
-                    		//}
-                    	}
+                    <%				}
+                    			} else {
+                    				for (Produto p : produtos) {
+                    					//Buscando por Código
+                    					if(Integer.parseInt(codbusca)==p.getCodigo()) {
+                    %>
+	                                        <tr style="background-color : white;">
+	                                            <td><%=p.getCodigo()%></td>
+	                                            <td><%=p.getProduto() %></td>
+	                                            <td><%=p.getPrecounit() %></td>
+	                                            <td><%=p.getEstoque() %></td>
+	                                            <td><img src="Mesas/icAdicionar.png"/></td>
+	                                            <td><a href="#" onclick="modal_alterarProduto('<%=p.getCodigo()%>', '<%=p.getProduto()%>', '<%=p.getPrecounit()%>', '<%=p.getEstoque()%>')"><img src="Mesas/icAlterarProduto.png"/></a></td>
+	                                            <td><a href="produto?operacao=excluir&codigo=<%=p.getCodigo()%>&produto=<%=p.getProduto()%>"><img src="Mesas/icExcluirProduto.png"/></a></td>
+	                                        </tr>
+	                <%						//Busca por codigo não existe.
+	                						x = false;
+                    					} 
+                    				}
+                    			}
+                    		} else {
+                    			for (Produto p : produtos) {
+                    				//Buscando por produto
+                    				if(codbusca.equals(p.getProduto())) {
+                    %>
+                                        <tr style="background-color : white;">
+                                            <td><%=p.getCodigo()%></td>
+                                            <td><%=p.getProduto() %></td>
+                                            <td><%=p.getPrecounit() %></td>
+                                            <td><%=p.getEstoque() %></td>
+                                            <td><img src="Mesas/icAdicionar.png"/></td>
+                                            <td><a href="#" onclick="modal_alterarProduto('<%=p.getCodigo()%>', '<%=p.getProduto()%>', '<%=p.getPrecounit()%>', '<%=p.getEstoque()%>')"><img src="Mesas/icAlterarProduto.png"/></a></td>
+                                            <td><a href="produto?operacao=excluir&codigo=<%=p.getCodigo()%>&produto=<%=p.getProduto()%>"><img src="Mesas/icExcluirProduto.png"/></a></td>
+                                        </tr>
+                    <%
+                    				//Busca por produto não existe.
+                    				x = false;
+                    				}
+                    			}
+                    		}
+     						if (x) {
+     				%>			
+     						<tr style="background-color : white;">
+     							<td><br></td>
+     							<td>Codigo ou Produto não cadastrado.</td>
+     							<td></td>
+     							<td></td>
+     							<td></td>
+     							<td></td>
+     							<td></td>
+ 							</tr>
+ 					<%
+     						}
+     					} else if(x){
+     	            %>					
+        					<tr style="background-color : white;">
+     							<td><br></td>
+     							<td>Não há nenhum produto cadastrado.</td>
+     							<td></td>
+     							<td></td>
+     							<td></td>
+     							<td></td>
+     							<td></td>
+ 							</tr>
+ 					<%
+        				}
                    	%>
                     <tr style="background-color:#F2F2F2;">
                         <td><br></td>
@@ -170,6 +248,7 @@
 	</p>
 	<br>
 </div>
+</form>
 </div>
 </div>
 </body>
