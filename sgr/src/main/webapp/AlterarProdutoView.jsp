@@ -11,7 +11,7 @@
 			<%Produto px = (Produto) request.getAttribute("alterarproduto"); %>
 	      <tr>
 	        <td>Codigo:</td>
-	        <td><b><%=px.getCodigo()%></b></td>
+	        <td><input name="codigo" type="text" readonly="true" value="<%=px.getCodigo()%>"></td>
 	      </tr>
 	      <tr>
 	        <td>Produto:</td>

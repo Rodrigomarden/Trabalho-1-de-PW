@@ -110,16 +110,19 @@
                         	<button class="cadastrarLoc" onclick="modal_cadastro()" ><img style="width:50px;" src="Mesas/lapis.png">&nbsp;Cadastrar Produto</button>
                     </div>
                     </thead>
-                  <table class="tabela-produtos-mesa">
+                  <table class="tabela-produtos-mesa table">
+                  <thead>
                     <tr class="atributos-tabela-produtos" style="background-color:#F2F2F2;">
-                        <td style="border-right: 1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;width:50px;"><p>Código</p></td>
-                        <td style="width : 400px;border-right: 1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;"><p>Produto</p></td>
-                        <td style="border-right: 1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;width:90px;"><p>Preço Unit.</p></td>
-                        <td style="border-right: 1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;width:80px;"><p>Estoque</p></td>
-                        <td style="border-right: 1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;width:90px;"><p>Adicionar</p></td>
-                        <td style="border-right: 1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;width:65px;"><p>Alterar</p></td>
-                        <td style="border-right: 1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;width:65px;"><p>Excluir</p></td>
+                        <th><p>Código</p></th>
+                        <th><p>Produto</p></th>
+                        <th><p>Preço Unit.</p></th>
+                        <th><p>Estoque</p></th>
+                        <th><p>Adicionar</p></th>
+                        <th><p>Alterar</p></th>
+                        <th><p>Excluir</p></th>
                     </tr>
+                   </thead>
+                   <tbody style="overflow:auto; width: 100px; heigth: 300px">
                     <%
                     	List<Produto> produtos = (List<Produto>) request.getAttribute("produtos");
                     	boolean x = true;
@@ -216,6 +219,7 @@
  					<%
         				}
                    	%>
+                   	 </tbody> 
                     <tr style="background-color:#F2F2F2;">
                         <td><br></td>
                     	<td><b>Atendente: </b><select style="width:200px;background-color : white;">
@@ -237,7 +241,8 @@
                     	<td><br></td>
                     	<td><br></td>
                     	<td><br></td>
-                    </tr>             
+                    </tr>
+                             
                   </table>
                     &nbsp;&nbsp;<span class="chek">&nbsp;&nbsp;&nbsp;&nbsp;<h5>Para adicionar clique uma vez no "+1."</h5></span>
                     <div class="sair-posicao-LocProd">
