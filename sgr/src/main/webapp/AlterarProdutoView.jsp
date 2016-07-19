@@ -3,9 +3,13 @@
 <%@page import="java.util.List"%>
 <html>
 <head>
-	<title>Alterar</title>
+	<title>Alterar</title
+        <link rel="stylesheet" href="Css/estiloCadastro.css"/>
+        <meta charset="utf-8"/>
 </head>
 <body>
+    <div class="container_principal">   
+    <div class="container_cadastro">
 	<form>
 		<table>
 			<%Produto px = (Produto) request.getAttribute("alterarproduto"); %>
@@ -28,6 +32,8 @@
 	    </table>
 	    <button name="operacao" value="alterar">Alterar</button>
     </form>
+    </div>
+    </div>
     <b>${msg}</b>
 </body>
 </html>
