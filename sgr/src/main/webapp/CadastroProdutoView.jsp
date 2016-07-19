@@ -27,11 +27,11 @@
 	      </tr>
 	    </table>
             <br>
-	    <button name="operacao" value="cadastrar">Cadastrar</button>
-      
+	    <button name="operacao" value="cadastrar">Cadastrar</button> <b>${msg}</b>
+      	
     </form>
     </div>
     </div>
-    <b>${msg}</b>
+    
 </body>
 </html>

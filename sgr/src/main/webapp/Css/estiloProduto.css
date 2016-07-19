@@ -19,6 +19,8 @@ input:-moz-placeholder {
 
 .posicao-LocProd{
     float : left;
+    margin-left: 20px;
+    
 }
 
 .posicao-mesa-002{
@@ -97,12 +99,11 @@ input:-moz-placeholder {
 }
 .produtos-mesa{
     display : block;
-    float : left;
+    float : none;
     border : 2px solid #E6E6E6;
     border-radius : 5px;
     clear : left;
     width : 830px;
-    margin-left : 15px;
     background-color : #E6E6E6;
 }   
 .button-busca{
@@ -150,12 +151,9 @@ input:-moz-placeholder {
     left : 5px;
 }
 .tabela-produtos-mesa{
-    float : left;
-    border : 1px solid #E6E6E6;
+    border : 7px solid #E6E6E6;
     position : relative;
-    border-radius : 5px;
-    margin : 5px;
-    display : block;
+    display : relative;
     bottom : 55px;
 }
 .valor-total{

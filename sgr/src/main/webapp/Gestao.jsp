@@ -367,7 +367,7 @@
 																	<th>Pedidos cancelados</th>
 																	<th>Total</th>
 																</tr>
-																</tr>
+
 															</thead>
 															<tbody>
 																<tr>

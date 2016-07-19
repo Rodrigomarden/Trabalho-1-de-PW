@@ -3,9 +3,9 @@
 <%@page import="java.util.List"%>
 <html>
 <head>
-	<title>Alterar</title
+		<title>Alterar</title>
+	    <meta charset="utf-8"/>
         <link rel="stylesheet" href="Css/estiloCadastro.css"/>
-        <meta charset="utf-8"/>
 </head>
 <body>
     <div class="container_principal">   
@@ -15,7 +15,7 @@
 			<%Produto px = (Produto) request.getAttribute("alterarproduto"); %>
 	      <tr>
 	        <td>Codigo:</td>
-	        <td><input name="codigo" type="text" readonly="true" value="<%=px.getCodigo()%>"></td>
+	        <td><input name="codigo" type="text" readonly value="<%=px.getCodigo()%>"></td>
 	      </tr>
 	      <tr>
 	        <td>Produto:</td>
