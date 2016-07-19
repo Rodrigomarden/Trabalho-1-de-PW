@@ -1,0 +1,28 @@
+body{
+    background-color : #D8D8D8;
+}
+.container_principal{
+    border : solid 1px #E6E6E6;
+    border-radius : 5px;
+    width : 100%;
+    background-color : #E6E6E6;
+    height : 100%;
+}
+.container_cadastro{
+    border : solid 1px #F2F2F2;
+    margin : 10px;
+    border-radius : 5px;
+    background-color : #F2F2F2;
+    padding : 10px;
+    height : 80%;
+}
+.form_cadastro input {
+    border-radius : 5px;
+}
+.form_cadastro button{
+    border-radius : 5px;
+    background-color : #E6E6E6
+}
+.form_cadastro button:hover{
+    transform:scale(1.1);
+}
