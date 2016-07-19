@@ -16,13 +16,6 @@ body{
     padding : 10px;
     height : 80%;
 }
-.form_cadastro input {
-    border-radius : 5px;
-}
-.form_cadastro button{
-    border-radius : 5px;
-    background-color : #E6E6E6
-}
 .form_cadastro button:hover{
     transform:scale(1.1);
 }

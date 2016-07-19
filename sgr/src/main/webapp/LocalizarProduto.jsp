@@ -82,9 +82,6 @@
 			</div>
 			<!-- /.navbar-collapse -->
 		</nav>
-
-		<div id="page-wrapper">
-			<div class="container">
 				<br>
 				<br>
 				<br>
@@ -101,7 +98,7 @@
 									<section class="button-busca">
 										<input type="text" name="pesquisa"
 											placeholder="&#xF002 Buscar produto (nome ou código)"
-											size=32px></input>
+											size=25px></input>
 									</section>
 									<div class="button-buscax">
 										<button>Buscar</button>

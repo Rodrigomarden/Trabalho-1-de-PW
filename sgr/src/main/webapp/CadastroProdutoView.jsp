@@ -11,19 +11,19 @@
 		<table>
 	      <tr>
 	        <td>Código:</td>
-	        <td><input name="codigo"></td> 
+	        <td><input name="codigo" pattern="[0-9]+$" required></td> 
 	      </tr>
 	      <tr>
 	        <td>Produto:</td>
-	        <td><input name="produto"></td>
+	        <td><input name="produto" required></td>
 	      </tr>
 	      <tr>
 	        <td>Preço Unitário:</td>
-	        <td><input name="precounit"></td>
+	        <td><input name="precounit" pattern="[0-9]+$" required></td>
 	      </tr>
 	      <tr>
 	        <td>Estoque:</td>
-	        <td><input name="estoque"></td>
+	        <td><input name="estoque" pattern="[0-9]+$" required></td>
 	      </tr>
 	    </table>
             <br>
